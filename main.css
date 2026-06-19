@@ -1,1 +1,43 @@
+/* CSS Reset */
 
+/* 1. Box-Sizing für alle Elemente auf border-box setzen */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0; /* Setzt Standardabstände auf null */
+  padding: 0; /* Innenabstände */
+}
+
+/* 2. Standard-Abstände für das Dokument entfernen und Text-Rendering optimieren */
+html, body {
+  height: 100%;
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%; /* Verhindert, dass einige mobile Browser beim Drehen des Smartphones ins Querformat die Schriftgröße automatisch und unkontrolliert vergrößern. */
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 3. Responsive Bilder und Medien */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* 4. Vererbung von Schriftarten für Formularelemente erzwingen */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 5. Listen-Formate zurücksetzen (optional, entfernt Standard-Punkte) */
+ol, ul {
+  list-style: none;
+}
+
+/* 6. Standard-Unterstreichung bei Links entfernen */
+a {
+  text-decoration: none; /* Entfernt den standardmäßigen Unterstrich bei Links. */
+  color: inherit; /* Verhindert, dass der Browser Links automatisch blau (und besuchte Links lila) einfärbt. */
+}
