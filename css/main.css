@@ -486,6 +486,28 @@ a {
 				opacity: 0;
 			}
 */
+
+/* Intro ---------------------------------------------------------- */
+	#intro {
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex; /* Aktiviert das flexible Box-Modell für das Intro. Es macht das Intro zu einem Container, der seine inneren Elemente spielend leicht anordnen kann. */
+		-moz-flex-direction: column;
+		-webkit-flex-direction: column;
+		-ms-flex-direction: column;
+		flex-direction: column; /* Stapelt die Elemente innerhalb des Intros untereinander */
+		-moz-justify-content: center;
+		-webkit-justify-content: center;
+		-ms-justify-content: center;
+		justify-content: center; /* Richtet alle Texte und Buttons zusätzlich hotizontal mittig aus */
+		cursor: default;
+		height: 100vh; /* vh = Viewport Height in % Body nimmt exakt 100% der Bildschirmhöhe ein */
+		min-height: 35em;
+		overflow: hidden;
+		text-align: center;
+	}
+
 /* Landing --------------------------------------------------- */
 
 	/*
