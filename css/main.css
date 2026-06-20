@@ -48,6 +48,7 @@ a {
 		background: #eee9e9;
 	}
 
+	/* Deaktiviert alle Animationen und Übergänge (Transitions) auf der gesamten Webseite, solange die Seite lädt. */
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 			-moz-animation: none !important;
 			-webkit-animation: none !important;
@@ -59,34 +60,34 @@ a {
 			transition: none !important;
 		}
 
-	body, input, select, textarea {
-		color: #fff;
-		font-family: "Open Sans", Helvetica, sans-serif;
+	body {
+		color: #000000; /* Textfarbe */
+		font-family: "The Hand", Helvetica, sans-serif;
 		font-size: 15pt;
 		font-weight: 400;
-		letter-spacing: 0.075em;
-		line-height: 1.65em;
+		letter-spacing: 0.075em; /* Der Abstand zwischen den einzelnen Buchstaben wird leicht erhöht (um 7,5% der aktuellen Schriftgröße). */
+		line-height: 1.5em; /* Zeilenabstand */
 	}
+		/* media screen: Diese Regel gilt nur für die Anzeige auf Bildschirmen (Monitoren, Laptops, Tablets, Smartphones), nicht jedoch für den Ausdruck der Seite. */
+		
+		@media screen and (max-width: 1600px) {
 
-		@media screen and (max-width: 1680px) {
-
-			body, input, select, textarea {
-				font-size: 13pt;
-			}
+			body {
+				font-size: 13pt;}
 
 		}
 
 		@media screen and (max-width: 1280px) {
 
-			body, input, select, textarea {
+			body {
 				font-size: 12pt;
 			}
 
 		}
 
-		@media screen and (max-width: 736px) {
+		@media screen and (max-width: 730px) {
 
-			body, input, select, textarea {
+			body {
 				font-size: 11pt;
 				letter-spacing: 0.0375em;
 			}
@@ -98,35 +99,36 @@ a {
 		-webkit-transition: color 0.2s ease, border-bottom-color 0.2s ease;
 		-ms-transition: color 0.2s ease, border-bottom-color 0.2s ease;
 		transition: color 0.2s ease, border-bottom-color 0.2s ease;
-		border-bottom: dotted 1px;
-		color: inherit;
-		text-decoration: none;
+
 	}
 
 		a:hover {
-			border-bottom-color: transparent;
+			color: #8b0000;
 		}
 
+	/* Aussehen für fettgedruckten Text fest. Er spricht sowohl das moderne <strong>-Element (wichtiger Text) als auch das klassische <b>-Element (optisch fetter Text) an. */
 	strong, b {
 		color: #fff;
-		font-weight: 600;
+		font-weight: 550; /* 550 entspricht halbfett */
 	}
 
+	/* kursiv geschriebener Text
 	em, i {
-		font-style: italic;
+		font-style: italic; /* Italic = CSS Standard für kursiv */
 	}
 
+	/* Abstand um Textabstände (oben, rechts, unten. links)
 	p {
 		margin: 0 0 2em 0;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #fff;
+		color: #000;
 		font-weight: 800;
 		letter-spacing: 0.225em;
 		line-height: 1em;
 		margin: 0 0 1em 0;
-		text-transform: uppercase;
+	/* 	text-transform: uppercase; Wandelt Text in Großbuchstaben um */
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -139,7 +141,7 @@ a {
 		line-height: 1.75em;
 	}
 
-		@media screen and (max-width: 736px) {
+		@media screen and (max-width: 730px) {
 
 			h2 {
 				font-size: 1.1em;
@@ -153,7 +155,7 @@ a {
 		line-height: 1.75em;
 	}
 
-		@media screen and (max-width: 736px) {
+		@media screen and (max-width: 730px) {
 
 			h3 {
 				font-size: 1em;
@@ -167,68 +169,66 @@ a {
 		line-height: 1.5em;
 	}
 
-	h5 {
-		font-size: 0.8em;
-		line-height: 1.5em;
-	}
-
-	h6 {
-		font-size: 0.7em;
-		line-height: 1.5em;
-	}
 
 	sub {
-		font-size: 0.8em;
-		position: relative;
-		top: 0.5em;
-	}
-
-	sup {
-		font-size: 0.8em;
+		font-size: 0.5em;
 		position: relative;
 		top: -0.5em;
 	}
 
+	sup {
+		font-size: 0.5em;
+		position: relative;
+		top: 0.5em;
+	}
+
+	/* horizontal rule = horizontale Trennlinie */
 	hr {
 		border: 0;
-		border-bottom: solid 2px #fff;
-		margin: 3em 0;
+		border-bottom: solid 2px #000;
+		margin: 3em 0; /* Abstand oben/unten (3-fach) */
 	}
 
-		hr.major {
-			margin: 4.5em 0;
-		}
-
+	/* eigener Block auf der Webseite; Er sorgt dafür, dass sich Zitate optisch deutlich vom normalen Fließtext abheben, indem sie eingerückt, schräg gestellt und mit einem vertikalen Balken versehen werden. */
 	blockquote {
-		border-left: solid 4px #fff;
+		border-left: solid 4px #000;
+		border-right: solid 4px #000;
 		font-style: italic;
 		margin: 0 0 2em 0;
-		padding: 0.5em 0 0.5em 2em;
+		padding: 0.5em 0 0.5em 3em;
 	}
 
+	/* Für Code-Wörter mitten im normalen Text */
 	code {
-		background: rgba(144, 144, 144, 0.25);
-		border-radius: 3px;
-		font-family: "Courier New", monospace;
-		font-size: 0.9em;
-		letter-spacing: 0;
-		margin: 0 0.25em;
-		padding: 0.25em 0.65em;
+    	background: #f0f4f9;       /* Das gleiche helle Gemini-Graublau */
+    	color: #1f1f1f;            /* Der gleiche schwarze Text */
+    	border-radius: 4px;        /* Leicht abgerundet */
+    	padding: 2px 6px;          /* Kompakter Innenabstand */
+    	font-family: monospace;
+    	font-size: 0.9em;
 	}
 
+	/* Der äußere Container des Code-Blocks (die Box) */
 	pre {
-		-webkit-overflow-scrolling: touch;
-		font-family: "Courier New", monospace;
-		font-size: 0.9em;
-		margin: 0 0 2em 0;
+    	background-color: #f0f4f9;       /* Das typische, helle Gemini-Graublau */
+   		border: none;                    /* Kein störender Rahmen */
+    	border-radius: 12px;             /* Schön weiche, moderne Ecken */
+    	padding: 16px 20px;              /* Viel Luft im Block für ein sauberes Design */
+    	margin: 24px 0;                  /* Großzügiger Abstand zu Textabsätzen */
+    	overflow-x: auto;                /* Scrollbalken, falls eine Zeile zu lang ist */
 	}
 
-		pre code {
-			display: block;
-			line-height: 1.75em;
-			padding: 1em 1.5em;
-			overflow-x: auto;
-		}
+	/* Die Formatierung des schwarzen Textes im Block */
+	pre code {
+    	font-family: 'Fira Code', 'Consolas', 'Courier New', monospace; /* Professionelle Entwickler-Schriften */
+    	font-size: 14px;                 /* Perfekt lesbare Schriftgröße */
+    	line-height: 1.6;                /* Sehr luftiger, angenehmer Zeilenabstand */
+    	color: #1f1f1f;                  /* Tiefes Anthrazit/Schwarz für perfekten Kontrast */
+    	letter-spacing: normal;          /* Verhindert, dass die Buchstaben auseinandergezogen werden */
+    	background: transparent;         /* Löscht den Inline-Hintergrund aus deinem alten Code */
+    	padding: 0;                      /* Kein Extra-Padding innerhalb des Textes */
+    	margin: 0;                       /* Kein Extra-Margin innerhalb des Textes */
+	}
 
 	.align-left {
 		text-align: left;
