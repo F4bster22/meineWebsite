@@ -45,7 +45,7 @@ a {
 /* Basic -------------------------------------------------------------------------------------------- */
 
 	body {
-		background: #2e3842;
+		background: #eee9e9;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
