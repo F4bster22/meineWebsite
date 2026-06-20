@@ -271,10 +271,10 @@ a {
 		-webkit-transform: translateX(20em);
 		-ms-transform: translateX(20em);
 		transform: translateX(20em); /* Verstecken des Menüs außerhlab der Website, wenn nicht aktiviert */
-		-moz-transition: -moz-transform 2.0s ease-in-out !important;
-		-webkit-transition: -webkit-transform 2.0s ease-in-out !important;
-		-ms-transition: -ms-transform 2.0s ease-in-out !important;
-		transition: transform 2.0s ease-in-out !important;
+		-moz-transition: -moz-transform 0.5s ease-in-out !important;
+		-webkit-transition: -webkit-transform 0.5s ease-in-out !important;
+		-ms-transition: -ms-transform 0.5s ease-in-out !important;
+		transition: transform 0.5s ease-in-out !important;
 		-webkit-overflow-scrolling: touch;
 		background: #ffefdb;
 		color: #8b7e66;
