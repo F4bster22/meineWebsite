@@ -487,16 +487,16 @@ a {
 			}
 */
 
-/* Intro ---------------------------------------------------------- */
-	#intro {
+/* Starter ---------------------------------------------------------- */
+	#starter {
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
-		display: flex; /* Aktiviert das flexible Box-Modell für das Intro. Es macht das Intro zu einem Container, der seine inneren Elemente spielend leicht anordnen kann. */
+		display: flex; /* Aktiviert das flexible Box-Modell für den Start. Es macht den Starter zu einem Container, der seine inneren Elemente spielend leicht anordnen kann. */
 		-moz-flex-direction: column;
 		-webkit-flex-direction: column;
 		-ms-flex-direction: column;
-		flex-direction: column; /* Stapelt die Elemente innerhalb des Intros untereinander */
+		flex-direction: column; /* Stapelt die Elemente innerhalb des Starters untereinander */
 		-moz-justify-content: center;
 		-webkit-justify-content: center;
 		-ms-justify-content: center;
@@ -533,7 +533,7 @@ a {
 	}
 
 	/*
-	body.is-mobile.landing #banner,
+	body.is-mobile.landing #starter,
 	body.is-mobile.landing .wrapper.style4 {
 		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
 		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
