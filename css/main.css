@@ -112,7 +112,7 @@ a {
 		font-weight: 550; /* 550 entspricht halbfett */
 	}
 
-	/* kursiv geschriebener Text
+	/* kursiv geschriebener Text */
 	em, i {
 		font-style: italic; /* Italic = CSS Standard für kursiv */
 	}
@@ -332,7 +332,7 @@ a {
 
 	body.menu-visible #page_cpl {
 		opacity: 0.35;
-		transition: opacity 0.5s ease in-out;
+		transition: opacity 0.5s ease-in-out;
 	}
 
 		body.menu-visible #page_cpl:before {
@@ -492,29 +492,27 @@ a {
 		text-align: center;
 	}
 
-	#starter. more scrolly {
+	#starter. more.scrolly {
 			background-image: url("Images/drei_pfeile_nach_unten.svg");
-			background-position: centre;
+			background-position: center;
 			background-repeat: no-repeat;
 			border: 0;
 			cursor: pointer; /* Verwandelt Maus in Pointer Hand */
 			display: block;
 			height: 3em;
-			position: absolute;
-			right: 0;
-			top: 0;
 			vertical-align: middle;
 			width: 3em;
+			margin: 2em auto 0 auto;
 		}
 
 /* Landing --------------------------------------------------- */
 
 
 	body.landingpage #page_cpl {
-		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("Images/background_starter.png");
-		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("Images/background_starter.png");
-		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("Images/background_starter.png");
-		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("Images/background_starter.png");
+		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../Images/background_starter.png");
+		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../Images/background_starter.png");
+		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../Images/background_starter.png");
+		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../Images/background_starter.png");
 		background-attachment: scroll; /* Sorgt dafür, dass das Bild mitscrollt (alternativ fixed) */
 		background-position: center center;
 		background-repeat: no-repeat;
