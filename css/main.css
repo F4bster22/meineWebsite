@@ -506,6 +506,13 @@ a {
 		background-color: #1d142a;
 	}
 
+/* Section ---------------------------------------------------------------- */
+
+	#section
+		padding: 4em 0 2em 0 ;
+		background-color: #ffcf94;
+		text-align: center;
+
 
 /* Footer ------------------------------------------- */
 	#footer {
