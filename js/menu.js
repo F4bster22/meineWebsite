@@ -19,7 +19,7 @@ function closeMenu() {
 // Klick auf Burger-Menü
 // Sicherheitsabfrage, ob menuIcon existiert
 if (menuIcon) {
-  // Warte darauf, dass jemand auf den Link klickt, bie diesem Event führe die Funktion aus
+  // Warte darauf, dass jemand auf den Link klickt; bei diesem Event (hier: click) führe die Funktion aus
   menuIcon.addEventListener('click', function(event) {
     // verhindert das normale Verhalten (Springen zum Link)
     event.preventDefault();
@@ -36,7 +36,7 @@ if (closeBtn) {
 }
 
 // Klick außerhalb des Menüs
-// reagiert auf Klick irgendow im Fenster
+// reagiert auf Klick irgendwo im Fenster
 window.addEventListener('click', function(event) {
   if (
     body.classList.contains('menu-visible') &&
