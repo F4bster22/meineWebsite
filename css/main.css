@@ -326,7 +326,7 @@ a {
 					}
 
 		#menu .close {
-			background-image: url("images/menu_close_button.svg");
+			background-image: url("css/Images/menu-close-x.svg");
 			background-position: 4.85em 1em;
 			background-repeat: no-repeat;
 			border: 0;
