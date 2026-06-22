@@ -1,31 +1,42 @@
-          // 1. Hole alle wichtigen Elemente aus dem HTML
-    			const body = document.body;
-                              const menuIcon = document.querySelector('.menuIcon');
-    			const closeBtn = document.querySelector('#menu .closeBtn');
+// Wichtige Elemente aus dem HTML holen
+const body = document.body;
+const menuIcon = document.querySelector('.menuIcon');
+const closeBtn = document.querySelector('#menu .closeBtn');
+const menuLinks = document.querySelectorAll('#menu a');
 
-    			// 2. Funktion: Menü öffnen
-    			if (menuIcon) {
-        			menuIcon.addEventListener('click', function(event) {
-            			event.preventDefault(); // Verhindert das Springen der Seite durch das '#' im Link
-            			body.classList.add('is-menu-visible'); // Fügt die Klasse hinzu, die das CSS triggert
-        			});
-    			}
+// Menü öffnen
+function openMenu() {
+  body.classList.add('is-menu-visible');
+}
 
-    			// 3. Funktion: Menü schließen über das "X"
-    			if (closeBtn) {
-        			closeBtn.addEventListener('click', function(event) {
-            			event.preventDefault();
-           				body.classList.remove('is-menu-visible'); // Entfernt die Klasse wieder
-        			});
-    			}
+// Menü schließen
+function closeMenu() {
+  body.classList.remove('is-menu-visible');
+}
 
-    			// 4. Funktion: Menü schließen, wenn man neben das Menü klickt (auf das Schutzschild)
-    			// Wir warten, bis das Schutzschild (:before) im HTML erzeugt wird
-    			window.addEventListener('click', function(event) {
-       				// Wenn das Menü offen ist und der Klick NICHT auf das Menü oder den Toggle-Button ging
-        			if (body.classList.contains('is-menu-visible') && 
-            			!event.target.closest('#menu') && 
-            			!event.target.closest('.menuIcon')) {
-            			body.classList.remove('is-menu-visible');
-        			}
-    			});
+// Klick auf Burger-Menü
+if (menuIcon) {
+  menuIcon.addEventListener('click', function(event) {
+    event.preventDefault();
+    openMenu();
+  });
+}
+
+// Klick auf X
+if (closeBtn) {
+  closeBtn.addEventListener('click', function(event) {
+    event.preventDefault();
+    closeMenu();
+  });
+}
+
+// Klick außerhalb des Menüs
+window.addEventListener('click', function(event) {
+  if (
+    body.classList.contains('is-menu-visible') &&
+    !event.target.closest('#menu') &&
+    !event.target.closest('.menuIcon')
+  ) {
+    closeMenu();
+  }
+});
