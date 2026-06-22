@@ -544,6 +544,9 @@ a {
 		transform: rotate(180deg);
 	}
 
+	#aufbtn {
+		font-size: 2em;
+	}
 
 /* Footer ------------------------------------------- */
 	#footer {
