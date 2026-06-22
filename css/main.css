@@ -366,7 +366,7 @@ a {
 	
 
 /* Header ----------------------------------------------------------------------- */
-/*
+
 	#header {
 		-moz-transition: background-color 0.2s ease;
 		-webkit-transition: background-color 0.2s ease;
@@ -439,13 +439,13 @@ a {
 						text-transform: uppercase;
 					}
 
-						#header nav > ul > li > a.menuToggle {
+						#header nav > ul > li > a.menuIcon {
 							outline: 0;
 							position: relative;
 						}
 
-							#header nav > ul > li > a.menuToggle:after {
-								background-image: url("images/bars.svg");
+							#header nav > ul > li > a.menuIcon:after {
+								background-image: url("css/Images/menu-burger.svg");
 								background-position: right center;
 								background-repeat: no-repeat;
 								content: '';
@@ -457,11 +457,11 @@ a {
 
 							@media screen and (max-width: 736px) {
 
-								#header nav > ul > li > a.menuToggle {
+								#header nav > ul > li > a.menuIcon {
 									padding: 0 1.5em;
 								}
 
-									#header nav > ul > li > a.menuToggle span {
+									#header nav > ul > li > a.menuIcon span {
 										display: none;
 									}
 
@@ -487,7 +487,7 @@ a {
 				pointer-events: none;
 				opacity: 0;
 			}
-*/
+
 
 /* Starter ---------------------------------------------------------- */
 	#starter {
