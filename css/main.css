@@ -418,7 +418,7 @@ a {
 
 							#header nav > ul > li > a.menuIcon::after {
 								background-image: url("Images/menu-burger.svg");
-								background-position: 1em 1em;
+								background-position: center;
 								background-repeat: no-repeat;
 								content: '';
 								display: inline-block;
@@ -574,7 +574,7 @@ a {
 		display: none;
 	}
 
-	/* sorgt dafür, dass die beiden Listenelemente in einer Zeile stehen mit Trennstrich dazwischen 
+	/* sorgt dafür, dass die beiden Listenelemente in einer Zeile stehen mit Trennstrich dazwischen */
 	.copyright {
 		display: flex;
 		justify-content: center;
