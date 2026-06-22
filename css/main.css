@@ -470,7 +470,7 @@ a {
 
 
 	body.landingpage #page_cpl {
-		background-image: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("../Images/background_starter.png");
+		background-image: url("../Images/background_starter.png");
 		background-attachment: scroll; /* Sorgt dafür, dass das Bild mitscrollt (alternativ fixed) */
 		background-position: center center;
 		background-repeat: no-repeat;
@@ -495,7 +495,7 @@ a {
 /* Section ---------------------------------------------------------------- */
 
 	#section1 {
-		padding: 8em 0 8em 0 ;
+		padding: 16em 0 16em 0 ;
 		background-color: #ffcf94;
 		color: #8f3545;
 		text-align: center;
