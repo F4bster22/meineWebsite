@@ -1,7 +1,7 @@
           // 1. Hole alle wichtigen Elemente aus dem HTML
     			const body = document.body;
                               const menuIcon = document.querySelector('.menuIcon');
-    			const closeBtn = document.querySelector('#menu .close');
+    			const closeBtn = document.querySelector('#menu .closeBtn');
 
     			// 2. Funktion: Menü öffnen
     			if (menuIcon) {
