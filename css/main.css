@@ -480,6 +480,7 @@ a {
 
 		color: #000;
 		text-align: center;
+		transform: translateY(1.5em);
 	}
 
 	#starter .more.scrolly::after {
