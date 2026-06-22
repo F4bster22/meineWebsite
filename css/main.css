@@ -422,10 +422,10 @@ a {
 								background-repeat: no-repeat;
 								content: '';
 								display: inline-block;
-								height: 1em;
+								height: 1.5em;
 								vertical-align: center;
-								right: 2em;
-								width: 1em;
+								right: 3em;
+								width: 1.5em;
 								background-size: contain;
 								transform: translateY(1.5em);
 							}
