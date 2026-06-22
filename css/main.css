@@ -333,7 +333,7 @@ a {
 
 	#header {
 		transition: background-color 0.3s ease;
-		backround-color: rgba(107, 86, 66, 0.1);
+		background-color: rgba(107, 86, 66, 0.1);
 		height: 3em;
 		left: 0;
 		line-height: 3em;
@@ -344,7 +344,7 @@ a {
 	}
 
 	body.show-header #header {
-		backround-color: rgba(107, 86, 66, 0.9);
+		background-color: rgba(107, 86, 66, 0.9);
 	}
 
 	body.show-header #header h1 {
@@ -416,16 +416,18 @@ a {
 							position: relative;
 						}
 
-							#header nav > ul > li > a.menuIcon:after {
+							#header nav > ul > li > a.menuIcon::after {
 								background-image: url("Images/menu-burger.svg");
 								background-position: 1em 1em;
 								background-repeat: no-repeat;
 								content: '';
 								display: inline-block;
-								height: 3.75em;
+								height: 3em;
 								vertical-align: top;
 								right: 3em;
 								width: 2em;
+								background-size: contain;
+								background-color: #000;
 							}
 
 
