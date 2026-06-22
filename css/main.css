@@ -68,32 +68,25 @@ a {
 		/* media screen: Diese Regel gilt nur für die Anzeige auf Bildschirmen (Monitoren, Laptops, Tablets, Smartphones), nicht jedoch für den Ausdruck der Seite. */
 		
 		@media screen and (max-width: 1600px) {
-
 			body {
 				font-size: 13pt;}
-
 		}
 
 		@media screen and (max-width: 1280px) {
-
 			body {
 				font-size: 12pt;
 			}
-
 		}
 
 		@media screen and (max-width: 736px) {
-
 			body {
 				font-size: 11pt;
 				letter-spacing: 0.0375em;
 			}
-
 		}
 
 	a {
 		transition: color 0.2s ease, border-bottom-color 0.2s ease;
-
 	}
 
 		a:hover {
@@ -136,12 +129,10 @@ a {
 	}
 
 		@media screen and (max-width: 736px) {
-
 			h2 {
 				font-size: 1.1em;
 				line-height: 1.65em;
 			}
-
 		}
 
 	h3 {
@@ -150,12 +141,10 @@ a {
 	}
 
 		@media screen and (max-width: 736px) {
-
 			h3 {
 				font-size: 1em;
 				line-height: 1.65em;
 			}
-
 		}
 
 	h4 {
@@ -291,11 +280,9 @@ a {
 				}
 
 					@media screen and (max-width: 736px) {
-
 						#menu ul > li > a {
 							line-height: 2em;
 						}
-
 					}
 
 		#menu .closeBtn {
@@ -423,21 +410,21 @@ a {
 
 							#header nav > ul > li > a.menuIcon:after {
 								background-image: url("Images/menu-burger.svg");
-								background-position: right center;
+								background-position: 1em 1em;
 								background-repeat: no-repeat;
 								content: '';
 								display: inline-block;
 								height: 3.75em;
+								right: 3 em;
 								vertical-align: top;
 								width: 2em;
 							}
 
-						@media screen and (max-width: 736px) {
 
+						@media screen and (max-width: 736px) {
 							#header nav > ul > li > a {
 								padding: 0 0 0 1.5em;
 							}
-
 						}
 
 					#header nav > ul > li:first-child {
