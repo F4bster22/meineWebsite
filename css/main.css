@@ -244,28 +244,6 @@ a {
 
 /* Page Wrapper + Menu --------------------------------------------------------------------------- */
 
-	/* Erzeugt einen sanften Übergang sobald die Seite komplett geladen ist */
-	#page-wrapper {
-		-moz-transition: opacity 1.0s ease;
-		-webkit-transition: opacity 1.0s ease;
-		-ms-transition: opacity 1.0s ease;
-		transition: opacity 1.0s ease;
-		opacity: 1;
-	}
-
-		#page-wrapper:before {
-			background: rgba(0, 0, 0, 0);
-			content: '';
-			display: block;
-			display: none;
-			height: 100%;
-			left: 0;
-			position: fixed;
-			top: 0;
-			width: 100%;
-			z-index: 10001;
-		}
-
 	#menu {
 		-moz-transform: translateX(20em);
 		-webkit-transform: translateX(20em);
