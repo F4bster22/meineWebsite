@@ -461,6 +461,8 @@ a {
 		color: #292f54;
 		font-size: 1.5em;
 		padding: 2em 0 0 0;
+		/* Verschieb Text nach unten*/
+		transform: translateY(2em);
 		}
 
 	#starter .more.scrolly {
