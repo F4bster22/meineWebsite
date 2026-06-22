@@ -1,11 +1,11 @@
-const body = document.body;
+const pagebody = document.body;
 
 // Prüfen, ob die Seite in mobiler Breite angezeigt wird
 function checkMobile() {
   if (window.matchMedia('(max-width: 736px)').matches) {
-    body.classList.add('mobile');
+    pagebody.classList.add('mobile');
   } else {
-    body.classList.remove('mobile');
+    pagebody.classList.remove('mobile');
   }
 }
 
@@ -17,16 +17,16 @@ window.addEventListener('resize', checkMobile);
 
 // Preload-Klasse nach dem Laden entfernen
 window.addEventListener('load', function() {
-  body.classList.remove('preload');
+  pagebody.classList.remove('preload');
 });
 
 
 
 function checkHeaderVisibility() {
   if (window.scrollY > window.innerHeight * 0.9) {
-    body.classList.add('show-header');
+    pagebody.classList.add('show-header');
   } else {
-    body.classList.remove('show-header');
+    pagebody.classList.remove('show-header');
   }
 }
 
