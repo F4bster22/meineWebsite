@@ -539,3 +539,12 @@ a {
 		background-color: #1d242a;
 		text-align: center;
 	}
+	.icons .label {
+		display: none;
+	}
+
+	.icons a {
+		font-size: 1.5em;
+		margin: 0 0.5em;
+	}
+
