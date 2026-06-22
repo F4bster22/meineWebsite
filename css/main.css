@@ -460,7 +460,8 @@ a {
 
 	#starter h2 {
 		color: #292f54;
-		font-size: 2em
+		font-size: 1.5em;
+		padding: 2em 0 0 0;
 		}
 
 	#starter .more.scrolly {
