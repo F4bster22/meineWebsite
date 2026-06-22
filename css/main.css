@@ -327,7 +327,7 @@ a {
 
 		#menu .closeBtn {
 			background-image: url("Images/menu-close-x.svg");
-			background-position: 4.85em 1em;
+			background-position: 2em 1em;
 			background-repeat: no-repeat;
 			border: 0;
 			cursor: pointer; /* Verwandelt Maus in Pointer Hand */
@@ -338,6 +338,10 @@ a {
 			top: 0;
 			vertical-align: middle;
 			width: 3em;
+		}
+
+		#menu .close span {
+ 			display: none;
 		}
 
 		@media screen and (max-width: 736px) {
