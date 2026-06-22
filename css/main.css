@@ -328,8 +328,8 @@ a {
 /* Header ----------------------------------------------------------------------- */
 
 	#header {
-		transition: transform 0.3s ease, opacity 0.3s ease, background-color 0.2s ease;
-		background: #e3e2e1;
+		transition: background-color 0.3s ease;
+		background: transparent;
 		height: 3em;
 		left: 0;
 		line-height: 3em;
@@ -337,25 +337,26 @@ a {
 		top: 0;
 		width: 100%;
 		z-index: 10000;
-
-		transform: translateY(-100%);
-		opacity: 0;
-		pointer-events: none;
 	}
 
 	body.show-header #header {
-		transform: translateY(0);
+		background: #e3e2e1;
+	}
+
+	body.show-header #header h1 {
 		opacity: 1;
 		pointer-events: auto;
 	}
 
 		#header h1 {
-			transition: opacity 0.2s ease;
+			transition: opacity 0.3s ease;
 			height: inherit;
 			left: 1.25em;
 			line-height: inherit;
 			position: absolute;
 			top: 0;
+			opacity: 0;
+			pointer-events: none;
 		}
 
 			#header h1 a {
