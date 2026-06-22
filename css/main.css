@@ -426,6 +426,7 @@ a {
 								vertical-align: center;
 								right: 4em;
 								width: 1.5em;
+								margin: 0 1em 0 1em;
 								background-size: contain;
 								/* transform: translateY(1.0em); */
 							}
