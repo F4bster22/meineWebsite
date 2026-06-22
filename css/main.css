@@ -242,7 +242,7 @@ a {
 		text-align: right;
 	}
 
-/* Page Wrapper + Menu --------------------------------------------------------------------------- */
+/* Menu --------------------------------------------------------------------------- */
 
 	#menu {
 		-moz-transform: translateX(20em);
@@ -330,12 +330,12 @@ a {
 
 		}
 
-	body.menu-visible #page-wrapper {
+	body.menu-visible #page_cpl {
 		opacity: 0.35;
 		transition: opacity 0.5s ease in-out;
 	}
 
-		body.menu-visible #page-wrapper:before {
+		body.menu-visible #page_cpl:before {
 			display: block;
 		}
 
@@ -512,20 +512,8 @@ a {
 		background-color: rgba(30, 40, 100, 0.9);
 	}
 
-	body.mobile.landingpage #page-wrapper {
+	body.mobile.landingpage #page_cpl {
 		background: none;
-	}
-
-
-	body.mobile.landingpage #starter,
-	body.mobile.landingpage .wrapper.style4 {
-		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("Images/background_starter.png");
-		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("Images/background_starter.png");
-		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("Images/background_starter.png");
-		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("Images/background_starter.png");
-		background-position: center center;
-		background-repeat: no-repeat;
-		background-size: cover;
 	}
 
 
