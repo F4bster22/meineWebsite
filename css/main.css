@@ -532,6 +532,7 @@ a {
 	#aufebtn {
 		font-size: 4em;
 		margin: 2em 0 2em 0;
+		transform: translateY(0.5em)
 	}
 
 	#aufebtn::before {
