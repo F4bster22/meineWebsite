@@ -422,12 +422,11 @@ a {
 								background-repeat: no-repeat;
 								content: '';
 								display: inline-block;
-								height: 3em;
+								height: 1em;
 								vertical-align: top;
-								right: 3em;
-								width: 2em;
+								right: 2em;
+								width: 1em;
 								background-size: contain;
-								background-color: #000;
 							}
 
 
