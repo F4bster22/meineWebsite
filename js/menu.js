@@ -1,11 +1,11 @@
           // 1. Hole alle wichtigen Elemente aus dem HTML
     			const body = document.body;
-   				const menuToggle = document.querySelector('.menuToggle');
+   			const menuIcon = document.querySelector('.menuIcon');
     			const closeBtn = document.querySelector('#menu .close');
 
     			// 2. Funktion: Menü öffnen
-    			if (menuToggle) {
-        			menuToggle.addEventListener('click', function(event) {
+    			if (menuIcon) {
+        			menuIcon.addEventListener('click', function(event) {
             			event.preventDefault(); // Verhindert das Springen der Seite durch das '#' im Link
             			body.classList.add('is-menu-visible'); // Fügt die Klasse hinzu, die das CSS triggert
         			});
