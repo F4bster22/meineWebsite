@@ -484,7 +484,7 @@ a {
 
 
 	body.landingpage #page_cpl {
-		background-image: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url("../Images/background_starter.png");
+		background-image: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("../Images/background_starter.png");
 		background-attachment: scroll; /* Sorgt dafür, dass das Bild mitscrollt (alternativ fixed) */
 		background-position: center center;
 		background-repeat: no-repeat;
@@ -494,7 +494,7 @@ a {
 	
 
 	body.landingpage #footer {
-		background-color: rgba(30, 40, 100, 0.9);
+		background-color: rgba(43, 44, 51, 0.5);
 	}
 
 	body.mobile.landingpage #page_cpl {
