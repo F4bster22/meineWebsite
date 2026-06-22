@@ -1,17 +1,18 @@
 // Wichtige Elemente aus dem HTML holen
+// document steht für komplette html Seite
+// querySelector() bedeutet: Suche ein Element mit einem CSS-Selektor
 const body = document.body;
 const menuIcon = document.querySelector('.menuIcon');
 const closeBtn = document.querySelector('#menu .closeBtn');
-const menuLinks = document.querySelectorAll('#menu a');
 
 // Menü öffnen
 function openMenu() {
-  body.classList.add('is-menu-visible');
+  body.classList.add('menu-visible');
 }
 
 // Menü schließen
 function closeMenu() {
-  body.classList.remove('is-menu-visible');
+  body.classList.remove('menu-visible');
 }
 
 // Klick auf Burger-Menü
@@ -33,7 +34,7 @@ if (closeBtn) {
 // Klick außerhalb des Menüs
 window.addEventListener('click', function(event) {
   if (
-    body.classList.contains('is-menu-visible') &&
+    body.classList.contains('menu-visible') &&
     !event.target.closest('#menu') &&
     !event.target.closest('.menuIcon')
   ) {
