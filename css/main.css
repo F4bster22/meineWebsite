@@ -523,7 +523,7 @@ a {
 /* Section ---------------------------------------------------------------- */
 
 	#section1 {
-		padding: 12em 0 12em 0 ;
+		padding: 10em 0 10em 0 ;
 		background-color: #ffcf94;
 		color: #000; /* former: #8f3545 */
 		text-align: center;
@@ -537,8 +537,8 @@ a {
 	#aufebtn::before {
 		content: '';
 		display: block;
-		width: 3em;
-		height: 3em;
+		width: 2em;
+		height: 2em;
 		margin: 0 auto 5em auto;
 		background-image: url("Images/drei_pfeile_nach_unten.svg");
 		background-position: center;
