@@ -423,7 +423,7 @@ a {
 								content: '';
 								display: inline-block;
 								height: 1em;
-								vertical-align: top;
+								vertical-align: center;
 								right: 2em;
 								width: 1em;
 								background-size: contain;
