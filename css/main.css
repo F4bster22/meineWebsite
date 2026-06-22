@@ -358,6 +358,8 @@ a {
 			opacity: 0;
 			pointer-events: none;
 			color: #fff;
+			font-size: 1em;
+			letter-spacing: 0.5em
 		}
 
 			#header h1 a {
