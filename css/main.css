@@ -531,7 +531,7 @@ a {
 	}
 
 	#aufebtn {
-		font-size: 4em;
+		font-size: 3em;
 		margin: 2em 0 2em 0;
 		transform: translateY(0.5em)
 	}
@@ -541,7 +541,7 @@ a {
 		display: block;
 		width: 2em;
 		height: 2em;
-		margin: 0 auto 5em auto;
+		margin: 0 auto 2em auto;
 		background-image: url("Images/drei_pfeile_nach_unten.svg");
 		background-position: center;
 		background-repeat: no-repeat;
