@@ -510,7 +510,7 @@ a {
 /* Landing --------------------------------------------------- */
 
 
-	body.landingpage #page-wrapper {
+	body.landingpage #page_cpl {
 		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("Images/background_starter.png");
 		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("Images/background_starter.png");
 		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("Images/background_starter.png");
