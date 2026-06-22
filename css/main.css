@@ -344,7 +344,7 @@ a {
 	}
 
 	body.show-header #header {
-		backround-color: rgba(107, 86, 66, 1);
+		backround-color: rgba(107, 86, 66, 0.9);
 	}
 
 	body.show-header #header h1 {
@@ -478,7 +478,7 @@ a {
 		border: 0;
 		cursor: pointer;
 		width: fit-content;
-		margin: 5em auto 0 auto;
+		margin: 2em auto 0 auto;
 
 		color: #000;
 		text-align: center;
