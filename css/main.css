@@ -584,6 +584,7 @@ a {
 		align-items: center;
 		gap: 0.75em;
 		flex-wrap: nowrap;
+		font-size: 0.8em;
 	}
 
 	.copyright li {
