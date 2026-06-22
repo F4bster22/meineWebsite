@@ -19,3 +19,16 @@ window.addEventListener('resize', checkMobile);
 window.addEventListener('load', function() {
   body.classList.remove('preload');
 });
+
+
+
+function checkHeaderVisibility() {
+  if (window.scrollY > window.innerHeight * 0.8) {
+    body.classList.add('show-header');
+  } else {
+    body.classList.remove('show-header');
+  }
+}
+
+window.addEventListener('scroll', checkHeaderVisibility);
+checkHeaderVisibility();
