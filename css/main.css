@@ -340,7 +340,7 @@ a {
 	}
 
 	body.show-header #header {
-		background: #e3e2e1;
+		background: #6b5642;
 	}
 
 	body.show-header #header h1 {
@@ -357,6 +357,7 @@ a {
 			top: 0;
 			opacity: 0;
 			pointer-events: none;
+			color: #fff;
 		}
 
 			#header h1 a {
