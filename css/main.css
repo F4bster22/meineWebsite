@@ -523,6 +523,19 @@ a {
 		text-align: center;
 	}
 
+	#section1 .more.scrolly::before {
+		content: '';
+		display: block;
+		width: 3em;
+		height: 3em;
+		background-image: url("Images/drei_pfeile_nach_unten.svg");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+		transform: rotate(180deg);
+	}
+
+
 /* Footer ------------------------------------------- */
 	#footer {
 		padding: 4em 0 2em 0 ;
