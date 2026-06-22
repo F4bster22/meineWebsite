@@ -492,7 +492,7 @@ a {
 		text-align: center;
 	}
 
-	#starter. more.scrolly {
+	#starter .more.scrolly {
 			background-image: url("Images/drei_pfeile_nach_unten.svg");
 			background-position: center;
 			background-repeat: no-repeat;
@@ -539,12 +539,29 @@ a {
 		background-color: #1d242a;
 		text-align: center;
 	}
-	.icons .label {
-		display: none;
+	
+	.icons {
+		display: flex;
+		justify-content: center;
+		gap: 1.5em;
+		margin-bottom: 2em;
+	}
+
+	.icons li {
+		display: inline-block;
 	}
 
 	.icons a {
 		font-size: 1.5em;
-		margin: 0 0.5em;
+		color: #ffefdb;
+		transition: color 0.2s ease;
+	}
+
+	.icons a:hover {
+		color: #8b0000;
+	}
+
+	.icons .label {
+		display: none;
 	}
 
