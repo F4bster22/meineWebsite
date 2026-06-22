@@ -25,7 +25,7 @@
        				// Wenn das Menü offen ist und der Klick NICHT auf das Menü oder den Toggle-Button ging
         			if (body.classList.contains('is-menu-visible') && 
             			!event.target.closest('#menu') && 
-            			!event.target.closest('.menuToggle')) {
+            			!event.target.closest('.menuIcon')) {
             			body.classList.remove('is-menu-visible');
         			}
     			});
