@@ -411,27 +411,16 @@ a {
 							position: relative;
 						}
 
-#header nav > ul > li > a.menuIcon {
-	display: flex;
-	align-items: center;
-	height: 3em;
-	padding: 0 1.5em;
-}
-
-#header nav > ul > li > a.menuIcon span {
-	display: none;
-}
-
-#header nav > ul > li > a.menuIcon:after {
-	content: '';
-	display: block;
-	width: 2em;
-	height: 2em;
-	background-image: url("Images/menu-burger.svg");
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: contain;
-}
+							#header nav > ul > li > a.menuIcon:after {
+								background-image: url("Images/menu-burger.svg");
+								background-position: right center;
+								background-repeat: no-repeat;
+								content: '';
+								display: inline-block;
+								height: 3.75em;
+								vertical-align: top;
+								width: 2em;
+							}
 
 						@media screen and (max-width: 736px) {
 
