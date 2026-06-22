@@ -576,6 +576,19 @@ a {
 		display: none;
 	}
 
+	/* sorgt dafür, dass die beiden Listenelemente in einer Zeile stehen mit Trennstrich dazwischen 
+	.copyright {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 0.75em;
+		flex-wrap: nowrap;
+	}
+
+	.copyright li {
+		display: inline-block;
+	}
+
 	.copyright li + li::before {
 		content: "|";
 		margin-right: 0.75em;
