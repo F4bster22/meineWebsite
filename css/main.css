@@ -527,7 +527,7 @@ a {
 	#section1 {
 		padding: 16em 0 16em 0 ;
 		background-color: #ffcf94;
-		color: #8f3545;
+		color: #000; /* former: #8f3545 */
 		text-align: center;
 	}
 
