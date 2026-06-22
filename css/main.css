@@ -539,8 +539,8 @@ a {
 	#aufebtn::before {
 		content: '';
 		display: block;
-		width: 2em;
-		height: 2em;
+		width: 3em;
+		height: 3em;
 		margin: 0 auto 2em auto;
 		background-image: url("Images/drei_pfeile_nach_unten.svg");
 		background-position: center;
