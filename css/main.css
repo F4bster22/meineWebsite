@@ -311,7 +311,7 @@ a {
 					color: inherit;
 					display: block; /* Erstellt ein Block Element -> eigene Zeile und volle Breite */
 					font-size: 1.0em;
-					letter-spacing: 0.8em;
+					letter-spacing: 0.5em;
 					outline: 0;
 					text-decoration: none;
 					text-transform: uppercase;
@@ -327,7 +327,7 @@ a {
 
 		#menu .closeBtn {
 			background-image: url("Images/menu-close-x.svg");
-			background-position: -1em 1em;
+			background-position: 1em 1em;
 			background-repeat: no-repeat;
 			border: 0;
 			cursor: pointer; /* Verwandelt Maus in Pointer Hand */
