@@ -325,8 +325,8 @@ a {
 
 					}
 
-		#menu .close {
-			background-image: url("css/Images/menu-close-x.svg");
+		#menu .closeBtn {
+			background-image: url("Images/menu-close-x.svg");
 			background-position: 4.85em 1em;
 			background-repeat: no-repeat;
 			border: 0;
@@ -445,7 +445,7 @@ a {
 						}
 
 							#header nav > ul > li > a.menuIcon:after {
-								background-image: url("css/Images/menu-burger.svg");
+								background-image: url("Images/menu-burger.svg");
 								background-position: right center;
 								background-repeat: no-repeat;
 								content: '';
