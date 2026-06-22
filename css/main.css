@@ -454,6 +454,11 @@ a {
 		text-align: center;
 	}
 
+	#starter h2 {
+		color:
+			font-size: 5em
+		}
+
 	#starter .more.scrolly {
 			background-image: url("Images/drei_pfeile_nach_unten.svg");
 			background-position: center;
@@ -465,6 +470,7 @@ a {
 			margin: 5em auto 0 auto;
 			padding: 2em 0 0 0;
 		}
+
 
 /* Landing --------------------------------------------------- */
 
