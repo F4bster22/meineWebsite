@@ -517,7 +517,7 @@ a {
 /* Landing --------------------------------------------------- */
 
 
-	body.landing #page-wrapper {
+	body.landingpage #page-wrapper {
 		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("Images/background_starter.png");
 		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("Images/background_starter.png");
 		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("Images/background_starter.png");
@@ -530,17 +530,17 @@ a {
 	}
 	
 
-	body.landing #footer {
+	body.landingpage #footer {
 		background-color: rgba(30, 40, 100, 0.9);
 	}
 
-	body.mobile.landing #page-wrapper {
+	body.mobile.landingpage #page-wrapper {
 		background: none;
 	}
 
 
-	body.mobile.landing #starter,
-	body.mobile.landing .wrapper.style4 {
+	body.mobile.landingpage #starter,
+	body.mobile.landingpage .wrapper.style4 {
 		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("Images/background_starter.png");
 		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("Images/background_starter.png");
 		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("Images/background_starter.png");
@@ -551,6 +551,6 @@ a {
 	}
 
 
-	body.mobile.landing #footer {
+	body.mobile.landingpage #footer {
 		background-color: #1d142a;
 	}
