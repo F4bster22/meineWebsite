@@ -456,7 +456,7 @@ a {
 		justify-content: center; /* Richtet alle Texte und Buttons zusätzlich hotizontal mittig aus */
 		cursor: default;
 		height: 100vh; /* vh = Viewport Height in % Body nimmt exakt 100% der Bildschirmhöhe ein */
-		min-height: 35em;
+		min-height: 5em;
 		overflow: hidden;
 		text-align: center;
 		font-family: "Patrick Hand", Helvetica, sans-serif;
