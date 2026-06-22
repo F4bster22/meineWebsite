@@ -327,7 +327,7 @@ a {
 
 		#menu .closeBtn {
 			background-image: url("Images/menu-close-x.svg");
-			background-position: 1em 1em;
+			background-position: -1em 1em;
 			background-repeat: no-repeat;
 			border: 0;
 			cursor: pointer; /* Verwandelt Maus in Pointer Hand */
@@ -518,10 +518,10 @@ a {
 
 
 	body.landing #page-wrapper {
-		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("Images/background_starter.jpg");
-		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("Images/background_starter.jpg");
-		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("Images/background_starter.jpg");
-		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("Images/background_starter.jpg");
+		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("Images/background_starter.png");
+		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("Images/background_starter.png");
+		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("Images/background_starter.png");
+		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("Images/background_starter.png");
 		background-attachment: scroll; /* Sorgt dafür, dass das Bild mitscrollt (alternativ fixed) */
 		background-position: center center;
 		background-repeat: no-repeat;
@@ -541,10 +541,10 @@ a {
 
 	body.is-mobile.landing #starter,
 	body.is-mobile.landing .wrapper.style4 {
-		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("Images/background_starter.jpg");
-		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("Images/background_starter.jpg");
-		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("Images/background_starter.jpg");
-		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("Images/background_starter.jpg");
+		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("Images/background_starter.png");
+		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("Images/background_starter.png");
+		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("Images/background_starter.png");
+		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("Images/background_starter.png");
 		background-position: center center;
 		background-repeat: no-repeat;
 		background-size: cover;
