@@ -311,7 +311,7 @@ a {
 					color: inherit;
 					display: block; /* Erstellt ein Block Element -> eigene Zeile und volle Breite */
 					font-size: 1.0em;
-					letter-spacing: 1.0em;
+					letter-spacing: 0.8em;
 					outline: 0;
 					text-decoration: none;
 					text-transform: uppercase;
