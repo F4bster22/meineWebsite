@@ -527,7 +527,13 @@ a {
 		text-align: center;
 	}
 
-	#section1 .more.scrolly::before {
+	#aufebtn {
+		font-size: 4em;
+		margin: 2em 0 2em 0;
+		padding: 2em 0 2em 0;
+	}
+
+	#aufebtn::before {
 		content: '';
 		display: block;
 		width: 3em;
@@ -538,12 +544,6 @@ a {
 		background-repeat: no-repeat;
 		background-size: contain;
 		transform: rotate(180deg);
-	}
-
-	#aufebtn {
-		font-size: 4em;
-		margin: 2em 0 2em 0;
-		padding: 2em 0 2em 0;
 	}
 
 /* Footer ------------------------------------------- */
