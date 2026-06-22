@@ -520,7 +520,7 @@ a {
 /* Section ---------------------------------------------------------------- */
 
 	#section1 {
-		padding: 16em 0 16em 0 ;
+		padding: 12em 0 12em 0 ;
 		background-color: #ffcf94;
 		color: #000; /* former: #8f3545 */
 		text-align: center;
@@ -537,7 +537,7 @@ a {
 		display: block;
 		width: 3em;
 		height: 3em;
-		margin: 0 auto 8em auto;
+		margin: 0 auto 5em auto;
 		background-image: url("Images/drei_pfeile_nach_unten.svg");
 		background-position: center;
 		background-repeat: no-repeat;
