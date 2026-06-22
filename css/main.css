@@ -117,7 +117,7 @@ a {
 		font-style: italic; /* Italic = CSS Standard für kursiv */
 	}
 
-	/* Abstand um Textabstände (oben, rechts, unten. links)
+	/* Abstand um Textabstände (oben, rechts, unten. links) */
 	p {
 		margin: 0 0 2em 0;
 	}
