@@ -492,6 +492,21 @@ a {
 		text-align: center;
 	}
 
+	#starter {
+			background-image: url("Images/drei_pfeile_nach_unten.svg");
+			background-position: centre;
+			background-repeat: no-repeat;
+			border: 0;
+			cursor: pointer; /* Verwandelt Maus in Pointer Hand */
+			display: block;
+			height: 3em;
+			position: absolute;
+			right: 0;
+			top: 0;
+			vertical-align: middle;
+			width: 3em;
+		}
+
 /* Landing --------------------------------------------------- */
 
 
