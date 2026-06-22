@@ -441,14 +441,6 @@ a {
 						margin-left: 0;
 					}
 
-		#header.alt {
-			background: transparent;
-		}
-
-			#header.alt h1 {
-				pointer-events: none;
-				opacity: 0;
-			}
 
 
 /* Starter ---------------------------------------------------------- */
@@ -550,6 +542,7 @@ a {
 	#aufebtn {
 		font-size: 4em;
 		margin: 2em 0 2em 0;
+		padding: 2em 0 2em 0;
 	}
 
 /* Footer ------------------------------------------- */
