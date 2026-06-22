@@ -531,6 +531,7 @@ a {
 		display: block;
 		width: 3em;
 		height: 3em;
+		margin: 0 auto 4em auto;
 		background-image: url("Images/drei_pfeile_nach_unten.svg");
 		background-position: center;
 		background-repeat: no-repeat;
