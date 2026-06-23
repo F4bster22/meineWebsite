@@ -336,7 +336,6 @@ a {
 /* Header ----------------------------------------------------------------------- */
 
 	#header {
-		font-family: "Cedarville Cursive", Helvetica, sans-serif;
 		transition: background-color 0.3s ease;
 		background-color: rgba(107, 86, 66, 0.2);
 		height: 3em;
@@ -358,6 +357,7 @@ a {
 	}
 
 		#header h1 {
+			font-family: "Cedarville Cursive", Helvetica, sans-serif;
 			transition: opacity 0.3s ease;
 			height: inherit;
 			left: 1.25em;
@@ -540,6 +540,7 @@ a {
 
 	#section1 h2 {
 		font-family: "Cedarville Cursive", Helvetica, sans-serif;
+		font-size: 2em;
 	}	
 
 	#aufebtn {
