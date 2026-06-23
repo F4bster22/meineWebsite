@@ -481,7 +481,7 @@ a {
 
 		color: #000;
 		text-align: center;
-		transform: translateY(2em);
+		margin: 3em auto 0 auto;
 	}
 
 	#starter .more.scrolly::after {
