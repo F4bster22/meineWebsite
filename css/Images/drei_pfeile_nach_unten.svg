@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 260" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 270" role="img" aria-labelledby="title desc">
   <title id="title">Drei Pfeile nach unten</title>
   <desc id="desc">Drei moderne, abgerundete Pfeile zeigen nach unten.</desc>
 
@@ -10,24 +10,21 @@
 
   <defs>
     <g id="down-arrow">
-      <!-- Schaft -->
-      <rect class="arrow" x="75" y="18" width="30" height="145" rx="24" />
-
-      <!-- Pfeilkopf mit leicht abgerundeter Wirkung -->
       <path class="arrow" d="
-        M 18 132
-        C 9 132, 4 143, 11 150
-        L 82 231
-        C 89 239, 101 239, 108 231
-        L 179 150
-        C 186 143, 181 132, 171 132
-        L 126 132
-        L 126 156
-        C 126 166, 118 174, 108 174
-        L 72 174
-        C 62 174, 54 166, 54 156
-        L 54 132
-        Z" />
+        M 90 18
+        C 99 18, 105 25, 105 34
+        L 105 150
+        L 171 150
+        C 183 150, 189 164, 181 173
+        L 108 244
+        C 101 252, 89 252, 82 244
+        L 9 173
+        C 1 164, 7 150, 19 150
+        L 75 150
+        L 75 34
+        C 75 25, 81 18, 90 18
+        Z
+      " />
     </g>
   </defs>
 
