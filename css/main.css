@@ -467,20 +467,18 @@ a {
 		}
 
 	#starter .more.scrolly {
-		display: inline-block;
+		display: inline-flex;
 		flex-direction: column;
 		align-items: center;
-		justify-content: center;
-		gap: 1em;
 
 		border: 0;
 		cursor: pointer;
 		width: fit-content;
-		margin: 1em auto 0 auto;
+		margin: 4em auto 0 auto;
 
 		color: #000;
 		text-align: center;
-		margin: 3em auto 0 auto;
+		gap: 0.5em;
 	}
 
 	#starter .more.scrolly::after {
@@ -492,7 +490,6 @@ a {
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: contain;
-		transform: translateY(0.5em);
 	}
 
 		@media screen and (max-width: 736px) {
@@ -540,7 +537,7 @@ a {
 		display: inline-block;
 		font-size: 3em;
 		font-family: "The Hand", Helvetica, sans-serif;
-		margin-top: -1em;
+		margin-top: -1em 0 3em 0;
 	}
 
 	#aufebtn::before {
