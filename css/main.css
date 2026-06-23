@@ -539,7 +539,7 @@ a {
 
 	#aufebtn {
 		font-size: 3em;
-		transform: translateY(0.2em)
+		margin-top: -1em;
 	}
 
 	#aufebtn::before {
