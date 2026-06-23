@@ -11,7 +11,7 @@
   <defs>
     <g id="down-arrow">
       <!-- Schaft -->
-      <rect class="arrow" x="54" y="18" width="72" height="145" rx="24" />
+      <rect class="arrow" x="54" y="18" width="50" height="145" rx="24" />
 
       <!-- Pfeilkopf mit leicht abgerundeter Wirkung -->
       <path class="arrow" d="
