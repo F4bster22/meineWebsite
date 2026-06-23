@@ -538,6 +538,10 @@ a {
 		text-align: center;
 	}
 
+	#section1 h1 {
+		font-family: "Cedarville Cursive", Helvetica, sans-serif;
+	}	
+
 	#aufebtn {
 		display: block;
 		font-size: 2em;
