@@ -422,13 +422,12 @@ a {
 								background-repeat: no-repeat;
 								content: '';
 								display: inline-block;
-								height: 1.5em;
+								height: 1em;
 								vertical-align: center;
 								right: 4em;
-								width: 1.5em;
+								width: 1em;
 								margin: 0 1em 0 1em;
 								background-size: contain;
-								/* transform: translateY(1.0em); */
 							}
 
 
@@ -548,7 +547,7 @@ a {
 		display: block;
 		width: 3em;
 		height: 3em;
-		margin: 0 auto 2em auto;
+		margin: 0 auto 0 auto;
 		background-image: url("Images/drei_pfeile_nach_unten.svg");
 		background-position: center;
 		background-repeat: no-repeat;
