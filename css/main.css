@@ -315,14 +315,18 @@ a {
 
 		}
 
-	body.menu-visible #page_cpl {
-		opacity: 0.35;
+	#page_cpl {
+		opacity: 1;
 		transition: opacity 0.5s ease-in-out;
 	}
 
-		body.menu-visible #page_cpl:before {
-			display: block;
-		}
+	body.menu-visible #page_cpl {
+		opacity: 0.35;
+	}
+
+	body.menu-visible #page_cpl:before {
+		display: block;
+	}
 
 	body.menu-visible #menu {
 		transform: translateX(0);
