@@ -63,7 +63,7 @@ a {
 	body {
 		background: #eee9e9;
 		color: #000000; /* Textfarbe */
-		font-family: "The Hand", Helvetica, sans-serif;
+		font-family: "#", Helvetica, sans-serif;
 		font-size: 15pt;
 		font-weight: 400;
 		letter-spacing: 0.075em; /* Der Abstand zwischen den einzelnen Buchstaben wird leicht erhöht (um 7,5% der aktuellen Schriftgröße). */
@@ -474,11 +474,11 @@ a {
 		border: 0;
 		cursor: pointer;
 		width: fit-content;
-		margin: 4em auto 0 auto;
+		margin: 5em auto 0 auto;
 
 		color: #000;
 		text-align: center;
-		gap: 0.5em;
+		gap: 0;
 	}
 
 	#starter .more.scrolly::after {
@@ -536,7 +536,7 @@ a {
 	#aufebtn {
 		display: inline-block;
 		font-size: 3em;
-		font-family: "The Hand", Helvetica, sans-serif;
+		font-family: "Patrick Hand", Helvetica, sans-serif;
 		margin-top: -1em 0 3em 0;
 	}
 
@@ -545,7 +545,7 @@ a {
 		display: block;
 		width: 3em;
 		height: 3em;
-		margin: 0 auto 0 auto;
+		margin: 1em auto 0 auto;
 		background-image: url("Images/drei_pfeile_nach_unten.svg");
 		background-position: center;
 		background-repeat: no-repeat;
