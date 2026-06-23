@@ -481,7 +481,7 @@ a {
 
 		color: #000;
 		text-align: center;
-		transform: translateY(1em);
+		transform: translateY(2em);
 	}
 
 	#starter .more.scrolly::after {
@@ -496,6 +496,11 @@ a {
 		transform: translateY(0.5em);
 	}
 
+		@media screen and (max-width: 736px) {
+			#starter h2 {
+				font-size: 0.5em;
+			}
+		}
 
 /* Landing --------------------------------------------------- */
 
@@ -534,7 +539,7 @@ a {
 
 	#aufebtn {
 		font-size: 3em;
-		transform: translateY(0.5em)
+		transform: translateY(0.2em)
 	}
 
 	#aufebtn::before {
