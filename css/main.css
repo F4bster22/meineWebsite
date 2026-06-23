@@ -537,12 +537,12 @@ a {
 		display: inline-flex;
 		font-size: 3em;
 		font-family: "Cedarville Cursive", Helvetica, sans-serif;
-		margin: -1em 0 5em 0;
+		margin: 0 0 5em 0;
 	}
 
 	#aufebtn::before {
 		content: '';
-		display: block;
+		display: inline-block;
 		width: 3em;
 		height: 3em;
 		margin: 0.5em auto 0 auto;
