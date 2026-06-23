@@ -535,7 +535,7 @@ a {
 
 	#aufebtn {
 		display: block;
-		font-size: 3em;
+		font-size: 2em;
 		font-family: "Cedarville Cursive", Helvetica, sans-serif;
 		margin: 1em 0 5em 0;
 	}
@@ -543,9 +543,9 @@ a {
 	#aufebtn::before {
 		content: '';
 		display: block;
-		width: 3em;
-		height: 3em;
-		margin: 0.5em auto 0 auto;
+		width: 2em;
+		height: 2em;
+		margin: 0.3em auto 0 auto;
 		background-image: url("Images/drei_pfeile_nach_unten.svg");
 		background-position: center;
 		background-repeat: no-repeat;
