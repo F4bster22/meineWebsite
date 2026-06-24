@@ -23,7 +23,7 @@ window.addEventListener('load', function() {
 
 
 function checkHeaderVisibility() {
-  if (window.scrollY > window.innerHeight * 0.9) {
+  if (window.scrollY > window.innerHeight * 1.05) {
     pagebody.classList.add('show-header');
   } else {
     pagebody.classList.remove('show-header');
