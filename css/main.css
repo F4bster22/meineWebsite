@@ -264,6 +264,7 @@ a {
 				border-top: solid 1px rgba(0, 0, 0, 0.125);
 				margin: 0.5em 0 0 0;
 				padding: 0.5em 0 0 0;
+				font-family: cursive, sans-serif;
 			}
 
 				#menu ul > li:first-child {
@@ -357,7 +358,7 @@ a {
 	}
 
 		#header h1 {
-			font-family: "Cedarville Cursive", Helvetica, sans-serif;
+			font-family: "Cedarville Cursive", cursive, sans-serif;
 			transition: opacity 0.3s ease;
 			height: inherit;
 			left: 1.25em;
@@ -392,6 +393,7 @@ a {
 			position: absolute;
 			right: 0;
 			top: 0;
+			font-family: cursive, sans-serif;
 		}
 
 			#header nav > ul {
@@ -458,7 +460,7 @@ a {
 		min-height: 5em;
 		overflow: hidden;
 		text-align: center;
-		font-family: "Cedarville Cursive", Helvetica, sans-serif;
+		font-family: "Cedarville Cursive", cursive, sans-serif;
 		font-size: 3em;
 		line-height: 1.0em
 	}
@@ -575,8 +577,8 @@ a {
 	.icons {
 		display: flex;
 		justify-content: center;
-		gap: 1.5em;
-		margin-bottom: 2em;
+		gap: 0.5em;
+		margin: 0 0 2em 2em;
 	}
 
 	.icons a {
@@ -592,6 +594,27 @@ a {
 	.icons .label {
 		display: none;
 	}
+
+	#footer ul > li > a.envelope::after {
+			mask-image: url("Images/umschlag_icon.svg");
+			mask-position: center;
+			mask-repeat: no-repeat;
+			content: '';
+			display: inline-block;
+			height: 1.8em;
+			right: 4em;
+			width: 1.5em;
+			margin: 0 1em 0 1em;
+			mask-size: contain;
+			transform: translateY(-0.42em);
+			background-color: #ffefdb;
+	}
+
+	#footer ul > li > a.envelope:hover::after {
+		background-color: #8b0000;
+	}
+
+
 
 	/* sorgt dafür, dass die beiden Listenelemente in einer Zeile stehen mit Trennstrich dazwischen */
 	.copyright {
