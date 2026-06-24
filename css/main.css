@@ -94,7 +94,7 @@ a {
 	}
 
 		a:hover {
-			color: #8b0000;
+			color: #3a0101;
 		}
 
 	/* Aussehen für fettgedruckten Text fest. Er spricht sowohl das moderne <strong>-Element (wichtiger Text) als auch das klassische <b>-Element (optisch fetter Text) an. */
@@ -588,7 +588,7 @@ a {
 	}
 
 	.icons a:hover {
-		color: #8b0000;
+		color: #3a0101;
 	}
 
 	.icons .label {
@@ -611,7 +611,7 @@ a {
 	}
 
 	#footer ul > li > a.envelope:hover::after {
-		background-color: #8b0000;
+		background-color: #3a0101;
 	}
 
 
@@ -633,5 +633,14 @@ a {
 	.copyright li + li::before {
 		content: "|";
 		margin-right: 0.75em;
+	}
+
+	.imprint {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: nowrap;
+		font-size: 0.8em;
+		text-decoration: underline;
 	}
 
