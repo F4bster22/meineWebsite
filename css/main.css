@@ -63,7 +63,7 @@ a {
 	body {
 		background: #eee9e9;
 		color: #000000; /* Textfarbe */
-		font-family: "#", Helvetica, sans-serif;
+		font-family: "Lora", Helvetica, sans-serif;
 		font-size: 15pt;
 		font-weight: 400;
 		letter-spacing: 0.075em; /* Der Abstand zwischen den einzelnen Buchstaben wird leicht erhöht (um 7,5% der aktuellen Schriftgröße). */
@@ -227,6 +227,28 @@ a {
 
 	.align-right {
 		text-align: right;
+	}
+
+	.quote {
+		font-style: italic;
+		color: #88653e;
+		font-size: 1.2em;
+		margin: 1em 0;
+	}
+
+	.author {
+		font-size: 1em;
+		color: #a5834f;
+		margin: 0.5em 0;
+	}
+
+	.separation-line {
+		display: block;
+		width: 35%;
+		height: 100%;
+		margin: 4em auto;
+		border-top: 2px solid #88653e;
+		border-bottom: 2px solid #88653e;
 	}
 
 /* Menu --------------------------------------------------------------------------- */
@@ -519,7 +541,7 @@ a {
 	
 
 	body.landingpage #footer {
-		background-color: #120c1a;
+		background-color: #15131b;
 	}
 
 	body.mobile.landingpage #page_cpl {
@@ -528,15 +550,15 @@ a {
 
 
 	body.mobile.landingpage #footer {
-		background-color: #120c1a;
+		background-color: #1a1722;
 	}
 
 /* Section ---------------------------------------------------------------- */
 
 	#section1 {
-		height: 50em;
+		height: 46em;
 		background-color: #ffcf94;
-		color: #000; /* former: #8f3545 */
+		color: #3a0101; /* former: #8f3545 */
 		text-align: center;
 	}
 
@@ -549,7 +571,7 @@ a {
 		display: block;
 		font-size: 2em;
 		font-family: "Cedarville Cursive", Helvetica, sans-serif;
-		margin: 2em 0 5em 0;
+		margin: 2em 0 3em 0;
 		padding-top: 0.5em;
 	}
 
@@ -568,7 +590,7 @@ a {
 
 /* Footer ------------------------------------------- */
 	#footer {
-		padding: 4em 0 2em 0 ;
+		padding: 2em 0 1em 0 ;
 		background-color: #1d242a;
 		text-align: center;
 		color: #fff;
@@ -578,7 +600,7 @@ a {
 		display: flex;
 		justify-content: center;
 		gap: 0.5em;
-		margin: 0 0 2em 2em;
+		margin: 0 0 0.5em 2em;
 	}
 
 	.icons a {
