@@ -527,6 +527,20 @@ a {
 			}
 		}
 
+	#starter2 {
+		display: flex; /* Aktiviert das flexible Box-Modell für den Start. Es macht den Starter zu einem Container, der seine inneren Elemente spielend leicht anordnen kann. */
+		flex-direction: column; /* Stapelt die Elemente innerhalb des Starters untereinander */
+		justify-content: center; /* Richtet alle Texte und Buttons zusätzlich hotizontal mittig aus */
+		cursor: default;
+		height: 100vh; /* vh = Viewport Height in % Body nimmt exakt 100% der Bildschirmhöhe ein */
+		min-height: 5em;
+		overflow: hidden;
+		text-align: center;
+		font-family: "Cedarville Cursive", cursive, sans-serif;
+		font-size: 3em;
+		line-height: 1.0em
+	}	
+
 /* Landing --------------------------------------------------- */
 
 
@@ -551,6 +565,24 @@ a {
 
 	body.mobile.landingpage #footer {
 		background-color: #1a1722;
+	}
+
+	body.chapter1 #page_cpl {
+		background-image: url("../Images/background_gallery.png");
+		background-attachment: scroll; /* Sorgt dafür, dass das Bild mitscrollt (alternativ fixed) */
+		background-position: center -180px;
+		background-repeat: no-repeat;
+		background-size: 140%;
+		padding-top: 0;
+	}
+
+	body.chapter2 #page_cpl {
+		background-image: url("../Images/background_3Ddesign2.png");
+		background-attachment: scroll; /* Sorgt dafür, dass das Bild mitscrollt (alternativ fixed) */
+		background-position: center -170px;
+		background-repeat: no-repeat;
+		background-size: 140%;
+		padding-top: 0;
 	}
 
 /* Section ---------------------------------------------------------------- */
@@ -587,6 +619,13 @@ a {
 		background-size: contain;
 		transform: rotate(180deg);
 	}
+
+	#section1.design1 {
+		background-color: #c9bfb7;
+		color: #3a0101; /* former: #8f3545 */
+		text-align: center;
+	}
+
 
 /* Footer ------------------------------------------- */
 	#footer {
