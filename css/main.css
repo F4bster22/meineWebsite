@@ -630,10 +630,11 @@ a {
 	}
 
 	#section1.design3 {
+		height: 30em;
 		background-color: #c9bfb7;
 		color: #3a0101; /* former: #8f3545 */
 		text-align: center;
-		padding-top: 10em;
+		padding-top: 8em;
 	}
 
 /* Gallery Section ------------------------------------------ */
@@ -642,7 +643,7 @@ a {
 		align-items: center;
 		justify-content: center;
 		gap: 2em;
-		max-width: 1000px;
+		max-width: 1200px;
 		margin: 0 auto 0 auto;
 		padding-top: 25em;
 		padding-bottom: 5em;
@@ -654,18 +655,18 @@ a {
 	} 
 
 	#gallery-image {
-		max-width: 100%;
+		max-width: 80%;
 		max-height: 70vh;
 		object-fit: inline-contain;
 		border-radius: 2px;
-		box-shadow: 0 1em 3em rgba(0, 0, 0, 0.25);
+		box-shadow: 0 1em 3em rgba(0, 0, 0, 0.5);
 		margin: auto;
 	}
 
 	#gallery-caption {
 		font-family: "Cedarville Cursive", cursive, sans-serif;
 		margin-top: 1em;
-		font-size: 1.5em;
+		font-size: 2em;
 		letter-spacing: 0.05em;
 	}
 
@@ -673,11 +674,12 @@ a {
 		font-family: "Cedarville Cursive", cursive, sans-serif;
 		background: none;
 		border: none;
-		color: #ffefdb;
+		color: #f8f3ec;
 		font-size: 2em;
 		cursor: pointer;
 		line-height: 1;
 		transition: color 0.3s ease, transform 0.3s ease;
+		padding: 0 0 3em 0;
 	}
 
 	.gallery-btn:hover {
