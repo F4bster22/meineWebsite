@@ -1,0 +1,19 @@
+<svg width="140" height="180" viewBox="0 0 140 180" xmlns="http://www.w3.org/2000/svg" fill="none">
+  <title>Three matching handwritten downward arrows with gentle point-symmetric shafts</title>
+  <defs>
+    <g id="arrow-gentle" stroke="#111111" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+      <!-- gentler point-symmetric shaft, ending above the arrowhead to avoid overlap -->
+      <path d="M70 18
+               C60 34, 60 54, 70 74
+               C75 94, 75 114, 70 128"/>
+      <!-- arrow head -->
+      <path d="M54 114 C61 123, 67 131, 70 138"/>
+      <path d="M86 114 C79 123, 73 131, 70 138"/>
+    </g>
+  </defs>
+
+  
+  <use href="#arrow-gentle" x="0" y="0"/>
+  <use href="#arrow-gentle" x="140" y="0"/>
+  <use href="#arrow-gentle" x="280" y="0"/>
+</svg>

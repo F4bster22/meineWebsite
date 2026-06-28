@@ -61,7 +61,7 @@ a {
 		}
 
 	body {
-		background: #eee9e9;
+		background: #c9bfb7; /* #eee9e9 vorher */
 		color: #000000; /* Textfarbe */
 		font-family: "Lora", Helvetica, sans-serif;
 		font-size: 15pt;
@@ -513,9 +513,9 @@ a {
 	#starter .more.scrolly::after {
 		content: '';
 		display: block;
-		width: 3em;
-		height: 3em;
-		background-image: url("Images/drei_pfeile_nach_unten.svg");
+		width: 2em;
+		height: 2em;
+		background-image: url("Images/three_cursive_down_arrows_less_curved.svg");
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: contain;
@@ -610,24 +610,82 @@ a {
 	#aufebtn::before {
 		content: '';
 		display: block;
-		width: 2em;
-		height: 2em;
+		width: 1.8em;
+		height: 1.8em;
 		margin: 0.5em auto 0 auto;
-		background-image: url("Images/drei_pfeile_nach_unten.svg");
+		background-image: url("Images/three_cursive_down_arrows_less_curved.svg");
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: contain;
 		transform: rotate(180deg);
 	}
 
-	#section1.design1 {
+	#section1.design2 {
+		display: none;
+		height: 10em;
 		background-color: #c9bfb7;
 		color: #3a0101; /* former: #8f3545 */
 		text-align: center;
+		padding-top: 2em;
 	}
 
+	#section1.design3 {
+		background-color: #c9bfb7;
+		color: #3a0101; /* former: #8f3545 */
+		text-align: center;
+		padding-top: 10em;
+	}
 
-/* Footer ------------------------------------------- */
+/* Gallery Section ------------------------------------------ */
+	.gallery-container {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 2em;
+		max-width: 1000px;
+		margin: 0 auto 0 auto;
+		padding-top: 25em;
+		padding-bottom: 5em;
+	}
+
+	.gallery-image-wrap {
+		text-align: center;
+		flex: 1;
+	} 
+
+	#gallery-image {
+		max-width: 100%;
+		max-height: 70vh;
+		object-fit: inline-contain;
+		border-radius: 2px;
+		box-shadow: 0 1em 3em rgba(0, 0, 0, 0.25);
+		margin: auto;
+	}
+
+	#gallery-caption {
+		font-family: "Cedarville Cursive", cursive, sans-serif;
+		margin-top: 1em;
+		font-size: 1.5em;
+		letter-spacing: 0.05em;
+	}
+
+	.gallery-btn {
+		font-family: "Cedarville Cursive", cursive, sans-serif;
+		background: none;
+		border: none;
+		color: #ffefdb;
+		font-size: 2em;
+		cursor: pointer;
+		line-height: 1;
+		transition: color 0.3s ease, transform 0.3s ease;
+	}
+
+	.gallery-btn:hover {
+		color: #8b0000;
+		transform: scale(1.08);
+	}
+
+/* Footer --------------------------------------------------- */
 	#footer {
 		padding: 2em 0 1em 0 ;
 		background-color: #1d242a;
