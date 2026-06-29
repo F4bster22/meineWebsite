@@ -43,17 +43,23 @@ const galleryImages = [
 	{
 		src: "Images/Artwork/Dummy_1.png",
 		alt: "Kunstwerk 1",
-		caption: "Kunstwerk 1"
+		caption: "Kunstwerk 1",
+		description: "Penny - Eine Münze, die in der Galerie ausgestellt ist.",
+		format: "Quadrat"
 	},
 	{
 		src: "Images/Artwork/Dummy_2.png",
 		alt: "Kunstwerk 2",
-		caption: "Kunstwerk 2"
+		caption: "Kunstwerk 2",
+		description: "Chip - Ein Kartoffelchip, der in der Galerie ausgestellt ist.",
+		format: "Quadrat"
 	},
 	{
 		src: "Images/Artwork/Dummy_3.png",
 		alt: "Kunstwerk 3",
-		caption: "Kunstwerk 3"
+		caption: "Kunstwerk 3",
+		description: "Taschentuch - Ein steifes Taschentuch, das in der Galerie ausgestellt ist.",
+		format: "Quadrat"
 	}
 ];
 
@@ -61,7 +67,10 @@ const galleryImages = [
 let currentImage = 0;
 
 const imageElement = document.querySelector("#gallery-image");
-const captionElement = document.querySelector("#gallery-caption");
+const captionElement = document.querySelector("#gallery-caption-main");
+const captionSmallElement = document.querySelector("#gallery-caption-small");
+const descriptionElement = document.querySelector("#gallery-description");
+const formatElement = document.querySelector("#gallery-format");
 const prevButton = document.querySelector(".gallery-btn.prev");
 const nextButton = document.querySelector(".gallery-btn.next");
 
@@ -69,6 +78,9 @@ function showImage(index) {
 	imageElement.src = galleryImages[index].src;
 	imageElement.alt = galleryImages[index].alt;
 	captionElement.textContent = galleryImages[index].caption;
+	captionSmallElement.textContent = galleryImages[index].caption;
+	descriptionElement.textContent = galleryImages[index].description;
+	formatElement.textContent = galleryImages[index].format;
 }
 
 prevButton.addEventListener("click", function () {

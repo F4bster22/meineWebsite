@@ -532,6 +532,21 @@ a {
 		flex-direction: column; /* Stapelt die Elemente innerhalb des Starters untereinander */
 		justify-content: center; /* Richtet alle Texte und Buttons zusätzlich hotizontal mittig aus */
 		cursor: default;
+		height: 130vh; /* vh = Viewport Height in % Body nimmt exakt 100% der Bildschirmhöhe ein */
+		min-height: 5em;
+		overflow: hidden;
+		text-align: center;
+		font-family: "Cedarville Cursive", cursive, sans-serif;
+		font-size: 3em;
+		line-height: 1.0em;
+		transform: translateY(-1.7em);
+	}
+	
+	#starter3 {
+		display: flex; /* Aktiviert das flexible Box-Modell für den Start. Es macht den Starter zu einem Container, der seine inneren Elemente spielend leicht anordnen kann. */
+		flex-direction: column; /* Stapelt die Elemente innerhalb des Starters untereinander */
+		justify-content: center; /* Richtet alle Texte und Buttons zusätzlich hotizontal mittig aus */
+		cursor: default;
 		height: 100vh; /* vh = Viewport Height in % Body nimmt exakt 100% der Bildschirmhöhe ein */
 		min-height: 5em;
 		overflow: hidden;
@@ -539,7 +554,7 @@ a {
 		font-family: "Cedarville Cursive", cursive, sans-serif;
 		font-size: 3em;
 		line-height: 1.0em
-	}	
+	}
 
 /* Landing --------------------------------------------------- */
 
@@ -621,12 +636,16 @@ a {
 	}
 
 	#section1.design2 {
-		display: none;
-		height: 10em;
+		background-image: url("../Images/Stuck.png");
+		display: visible;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 8em;
 		background-color: #c9bfb7;
 		color: #3a0101; /* former: #8f3545 */
 		text-align: center;
-		padding-top: 2em;
+		padding-top: 1em;
 	}
 
 	#section1.design3 {
@@ -639,17 +658,26 @@ a {
 
 /* Gallery Section ------------------------------------------ */
 	.gallery-container {
-		display: flex;
+		background-image: url("../Images/canvas_museum.png");
+		background-repeat: no-repeat;
+		background-position: center -220px;
+		background-size: 115%;
+		display: grid;
+		grid-template-columns: auto auto auto;
+		justify-content: center;
+		column-gap: 0.5em;
 		align-items: center;
 		justify-content: center;
-		gap: 2em;
-		max-width: 1200px;
+		gap: 0.1em;
 		margin: 0 auto 0 auto;
-		padding-top: 25em;
+		padding-top: 5em;
 		padding-bottom: 5em;
 	}
 
 	.gallery-image-wrap {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 		text-align: center;
 		flex: 1;
 	} 
@@ -657,15 +685,14 @@ a {
 	#gallery-image {
 		max-width: 80%;
 		max-height: 70vh;
-		object-fit: inline-contain;
+		object-fit: contain;
 		border-radius: 2px;
 		box-shadow: 0 1em 3em rgba(0, 0, 0, 0.5);
-		margin: auto;
 	}
 
-	#gallery-caption {
+	#gallery-caption-main {
 		font-family: "Cedarville Cursive", cursive, sans-serif;
-		margin-top: 1em;
+		margin-top: 2.1em;
 		font-size: 2em;
 		letter-spacing: 0.05em;
 	}
@@ -674,18 +701,33 @@ a {
 		font-family: "Cedarville Cursive", cursive, sans-serif;
 		background: none;
 		border: none;
-		color: #f8f3ec;
+		color: #81736d;
 		font-size: 2em;
 		cursor: pointer;
 		line-height: 1;
 		transition: color 0.3s ease, transform 0.3s ease;
-		padding: 0 0 3em 0;
+		padding-bottom: 5.5em;
+		margin: 0 1em 0 1em;
 	}
 
 	.gallery-btn:hover {
 		color: #8b0000;
 		transform: scale(1.08);
 	}
+
+	#section2.design2 {
+		display: visible;
+		height: 15em;
+		background-color: #ebd8c8;
+		color: #3a0101; /* former: #8f3545 */
+		text-align: center;
+	}
+
+	#section2 h2 {
+		font-family: "Cedarville Cursive", Helvetica, sans-serif;
+		font-size: 1.5em;
+		letter-spacing: 0.05em;
+	}	
 
 /* Footer --------------------------------------------------- */
 	#footer {
