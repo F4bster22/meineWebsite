@@ -553,7 +553,8 @@ a {
 		text-align: center;
 		font-family: "Cedarville Cursive", cursive, sans-serif;
 		font-size: 3em;
-		line-height: 1.0em
+		line-height: 1.0em;
+		transform: translateY(+0.5em);
 	}
 
 /* Landing --------------------------------------------------- */
@@ -594,7 +595,7 @@ a {
 	body.chapter2 #page_cpl {
 		background-image: url("../Images/background_3Ddesign2.png");
 		background-attachment: scroll; /* Sorgt dafür, dass das Bild mitscrollt (alternativ fixed) */
-		background-position: center -170px;
+		background-position: center -140px;
 		background-repeat: no-repeat;
 		background-size: 140%;
 		padding-top: 0;
@@ -671,7 +672,7 @@ a {
 		gap: 0.1em;
 		margin: 0 auto 0 auto;
 		padding-top: 5em;
-		padding-bottom: 5em;
+		padding-bottom: 8em;
 	}
 
 	.gallery-image-wrap {
@@ -692,7 +693,7 @@ a {
 
 	#gallery-caption-main {
 		font-family: "Cedarville Cursive", cursive, sans-serif;
-		margin-top: 2.1em;
+		margin-top: 1.8em;
 		font-size: 2em;
 		letter-spacing: 0.05em;
 	}
@@ -715,19 +716,73 @@ a {
 		transform: scale(1.08);
 	}
 
+	#details {
+		/* background-color: #fcefe4b9; */
+		background-size: cover;
+		margin-top: -3em;
+		padding-top: 1em;
+		font-family: Helvetica, sans-serif;
+		font-size: 1em;
+		letter-spacing: 0.05em;
+		line-height: 0.4em;
+		width: 90%;
+		height: 3em;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 1em;
+	}
+
 	#section2.design2 {
 		display: visible;
-		height: 15em;
+		height: 10em;
 		background-color: #ebd8c8;
 		color: #3a0101; /* former: #8f3545 */
 		text-align: center;
+		line-height: 0.5em;
+		padding-top: 1em;
+		max-width: 80%;
 	}
 
 	#section2 h2 {
 		font-family: "Cedarville Cursive", Helvetica, sans-serif;
 		font-size: 1.5em;
 		letter-spacing: 0.05em;
-	}	
+	}
+
+/* Basic Layout --------------------------------------------------- */
+
+	.basic {
+		padding: 12em 0 9em 0;
+		text-align: center;
+	}
+
+	.basic h2 {
+		font-family: "Cedarville Cursive", Helvetica, sans-serif;
+		font-size: 3em;
+		letter-spacing: 0.05em;
+	}
+
+	#imprint {
+		background-color: #b1a59b;
+		background-size: cover;
+		padding-top: 7em;
+	}
+
+	#imprint h2 {
+		font-family: Helvetica, sans-serif;
+		font-size: 1.5em;
+		letter-spacing: 0.05em;
+	}
+
+	#imprint .content {
+		font-family: Helvetica, sans-serif;
+		font-size: 1em;
+		letter-spacing: 0.05em;
+		line-height: 1.5em;
+		margin: 0 auto;
+		max-width: 800px;
+	}
 
 /* Footer --------------------------------------------------- */
 	#footer {
@@ -805,5 +860,6 @@ a {
 		flex-wrap: nowrap;
 		font-size: 0.8em;
 		text-decoration: underline;
+		padding-top: 1em;
 	}
 
