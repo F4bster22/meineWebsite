@@ -279,7 +279,7 @@ a {
 		right: 0;
 		top: 0;
 		width: 20em;
-		z-index: 10002;
+		z-index: 90002;
 	}
 
 			#menu ul > li {
@@ -557,6 +557,21 @@ a {
 		transform: translateY(+0.5em);
 	}
 
+	#starter4 {
+		display: flex; /* Aktiviert das flexible Box-Modell für den Start. Es macht den Starter zu einem Container, der seine inneren Elemente spielend leicht anordnen kann. */
+		flex-direction: column; /* Stapelt die Elemente innerhalb des Starters untereinander */
+		justify-content: center; /* Richtet alle Texte und Buttons zusätzlich hotizontal mittig aus */
+		cursor: default;
+		height: 50vh; /* vh = Viewport Height in % Body nimmt exakt 100% der Bildschirmhöhe ein */
+		min-height: 5em;
+		overflow: hidden;
+		text-align: center;
+		font-family: "Cedarville Cursive", cursive, sans-serif;
+		font-size: 3em;
+		line-height: 1.0em;
+		transform: translateY(+0.5em);
+	}
+
 /* Landing --------------------------------------------------- */
 
 
@@ -598,6 +613,14 @@ a {
 		background-position: center -140px;
 		background-repeat: no-repeat;
 		background-size: 140%;
+		padding-top: 0;
+	}
+
+	body.chapter3 #page_cpl {
+		background-color: #e8f3d3;
+		background-attachment: scroll; /* Sorgt dafür, dass das Bild mitscrollt (alternativ fixed) */
+		background-repeat: no-repeat;
+		background-size: 80%;
 		padding-top: 0;
 	}
 
