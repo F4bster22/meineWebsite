@@ -46,6 +46,15 @@ a {
   color: inherit; /* Verhindert, dass der Browser Links automatisch blau (und besuchte Links lila) einfärbt. */
 }
 
+@font-face {
+	font-family: "Cedarville Cursive";
+	src: url("../fonts/CedarvilleCursive-Regular.ttf") format("truetype");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+
 /* Basic -------------------------------------------------------------------------------------------- */
 
 	/* Deaktiviert alle Animationen und Übergänge (Transitions) auf der gesamten Webseite, solange die Seite lädt. */
@@ -562,14 +571,14 @@ a {
 		flex-direction: column; /* Stapelt die Elemente innerhalb des Starters untereinander */
 		justify-content: center; /* Richtet alle Texte und Buttons zusätzlich hotizontal mittig aus */
 		cursor: default;
-		height: 50vh; /* vh = Viewport Height in % Body nimmt exakt 100% der Bildschirmhöhe ein */
+		height: 33vh; /* vh = Viewport Height in % Body nimmt exakt 100% der Bildschirmhöhe ein */
 		min-height: 5em;
 		overflow: hidden;
 		text-align: center;
 		font-family: "Cedarville Cursive", cursive, sans-serif;
 		font-size: 3em;
 		line-height: 1.0em;
-		transform: translateY(+0.5em);
+		transform: translateY(+1em);
 	}
 
 /* Landing --------------------------------------------------- */
@@ -617,7 +626,7 @@ a {
 	}
 
 	body.chapter3 #page_cpl {
-		background-color: #e8f3d3;
+		background-color: #ebd6cd;
 		background-attachment: scroll; /* Sorgt dafür, dass das Bild mitscrollt (alternativ fixed) */
 		background-repeat: no-repeat;
 		background-size: 80%;
@@ -627,7 +636,7 @@ a {
 /* Section ---------------------------------------------------------------- */
 
 	#section1 {
-		height: 46em;
+		height: 48em;
 		background-color: #ffcf94;
 		color: #3a0101; /* former: #8f3545 */
 		text-align: center;
@@ -659,6 +668,27 @@ a {
 		transform: rotate(180deg);
 	}
 
+	#gallery-link {
+		border-color: #88653e;
+		border-style: solid;
+		border-radius: 2em;
+		max-width: 10em;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 2em;
+		font-family: "Cedarville Cursive", Helvetica, sans-serif;
+		color: #5e4325;
+		margin: 0 auto;
+		padding: 1.3em 0 1.3em 0;
+		box-shadow: 0.2em 0.3em 0.3em rgba(0, 0, 0, 0.5);
+	}
+
+	#gallery-link:hover {
+		background-color: #dbb787;
+		color: #3b2b17;
+	}
+
 	#section1.design2 {
 		background-image: url("../Images/Stuck.png");
 		display: visible;
@@ -673,12 +703,39 @@ a {
 	}
 
 	#section1.design3 {
-		height: 30em;
-		background-color: #c9bfb7;
+		display: flex;
+		height: 40em;
+		background-color: #f7f1ed;
 		color: #3a0101; /* former: #8f3545 */
 		text-align: center;
-		padding-top: 8em;
+		align-items: center;
+		justify-content: center;
+		margin: 0 auto;
+		padding: 27em 7em;
 	}
+
+	.about-image,
+	.about-text {
+		flex: 1;
+	}
+
+
+	.about-image img {
+		width: 80%;
+		max-width: 800px;
+		display: flex;
+	}
+
+	.about-text {
+		width: 100%;
+		max-width: 800px;
+		padding: 0 7em;
+		text-align: left;
+		font-size: 0.8em;
+	}
+
+
+	
 
 /* Gallery Section ------------------------------------------ */
 	.gallery-container {
@@ -730,7 +787,7 @@ a {
 		cursor: pointer;
 		line-height: 1;
 		transition: color 0.3s ease, transform 0.3s ease;
-		padding-bottom: 5.5em;
+		padding-bottom: 5.2em;
 		margin: 0 1em 0 1em;
 	}
 
