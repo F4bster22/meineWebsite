@@ -45,21 +45,24 @@ const galleryImages = [
 		alt: "Kunstwerk 1",
 		caption: "Kunstwerk 1",
 		medium: "Digital 1",
-		format: "Quadrat 1"
+		format: "Quadrat 1",
+		link: "../gallery/human-bias/index.html"
 	},
 	{
 		src: "../Images/Artwork/Dummy_2.png",
-		alt: "Kunstwerk 2",
-		caption: "Kunstwerk 2",
-		medium: "Digital 2",
-		format: "Quadrat 2"
+		alt: "Human Bias",
+		caption: "Human Bias",
+		medium: "Tinte auf Papier",
+		format: "DIN A5 Hochformat",
+		link: "../gallery/human-bias/index.html"
 	},
 	{
 		src: "../Images/Artwork/Dummy_3.png",
 		alt: "Kunstwerk 3",
 		caption: "Kunstwerk 3",
 		medium: "Digital 3",
-		format: "Quadrat 3"
+		format: "Quadrat 3",
+		link: "../gallery/human-bias/index.html"
 	}
 ];
 
@@ -71,6 +74,7 @@ const captionElement = document.querySelector("#gallery-caption-main");
 // const captionSmallElement = document.querySelector("#gallery-caption-small");
 const mediumElement = document.querySelector("#gallery-medium");
 const formatElement = document.querySelector("#gallery-format");
+const linkElement = document.querySelector("#gallery-image-link");
 const prevButton = document.querySelector(".gallery-btn.prev");
 const nextButton = document.querySelector(".gallery-btn.next");
 
@@ -81,6 +85,7 @@ function showImage(index) {
 	// captionSmallElement.textContent = galleryImages[index].caption; 
 	mediumElement.textContent = galleryImages[index].medium;
 	formatElement.textContent = galleryImages[index].format;
+	linkElement.href = galleryImages[index].link;
 }
 
 prevButton.addEventListener("click", function () {

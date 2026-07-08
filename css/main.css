@@ -796,6 +796,14 @@ a {
 		transform: scale(1.08);
 	}
 
+	#gallery-image-link {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		text-decoration: none;
+	}
+
 	#details {
 		/* background-color: #fcefe4b9; */
 		background-size: cover;
