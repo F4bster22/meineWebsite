@@ -42,28 +42,52 @@ checkHeaderVisibility();
 const galleryImages = [
 	{
 		src: "../Images/Artwork/Dummy_1.png",
-		alt: "Kunstwerk 1",
-		caption: "Kunstwerk 1",
-		medium: "Digital 1",
-		format: "Quadrat 1",
+		alt: "Ohne Titel",
+		caption: "Ohne Titel",
+		medium: "Digital Print on Canvas",
+		format: "80 x 80 cm",
 		link: "../gallery/human-bias/index.html"
 	},
 	{
 		src: "../Images/Artwork/Dummy_2.png",
 		alt: "Human Bias",
 		caption: "Human Bias",
-		medium: "Tinte auf Papier",
-		format: "DIN A5 Hochformat",
+		medium: "Pigmented Ink on Paper",
+		format: "DIN A5 Portrait",
 		link: "../gallery/human-bias/index.html"
 	},
 	{
 		src: "../Images/Artwork/Dummy_3.png",
-		alt: "Kunstwerk 3",
-		caption: "Kunstwerk 3",
-		medium: "Digital 3",
-		format: "Quadrat 3",
+		alt: "Grace under their Gaze",
+		caption: "Grace under their Gaze",
+		medium: "Digital Drawing",
+		format: "Square",
 		link: "../gallery/human-bias/index.html"
-	}
+	},
+	{
+		src: "../Images/Artwork/Dummy_3.png",
+		alt: "Between Heart and Mind",
+		caption: "Between Heart and Mind",
+		medium: "Colour Pencils on Paper",
+		format: "DIN A4 Landscape",
+		link: "../gallery/between-heart-and-mind/index.html"
+	},
+	{
+		src: "../Images/Artwork/Dummy_3.png",
+		alt: "Venice",
+		caption: "Venice",
+		medium: "Pigmented Ink on Paper",
+		format: "DIN A4 Landscape",
+		link: "../gallery/human-bias/index.html"
+	},
+	{
+		src: "../Images/Artwork/Dummy_3.png",
+		alt: "Good Mood = Good Luck",
+		caption: "Good Mood = Good Luck",
+		medium: "Colour Pencils on Paper",
+		format: "DIN A4 Portrait",
+		link: "../gallery/human-bias/index.html"
+	},
 ];
 
 // Variable, um das aktuelle Bild zu verfolgen (merkt sich das aktuelle Bild; Liste beginnt in Java bei 0) //

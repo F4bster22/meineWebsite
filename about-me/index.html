@@ -41,24 +41,56 @@
 					<div class="about-image">
 						<img src="../Images/me_london_2024.JPG" alt="Portrait von Fabian Riediger">
 					</div>
-					<div class="about-text">
+					<div class="about-texts">
+						<div class="language-toggle">
+							<button type="button" class="lang-btn active" data-lang="de">Deutsch</button>
+							<button type="button" class="lang-btn" data-lang="bairisch">Bairisch</button>
+						</div>
+						<div class="about-text-content">
 							<br>
-							<h3>Servus, das bin ich!</h3>
-							<p>Ich heiße Fabian Riediger und liebe es neue Dinge zu erschaffen. Ich lerne ständig dazu und versuche jeden
-								Tag zu einer etwas besseren Version von mir selbst zu werden. Aber mal von Anfang an: <br><br>
-								Ich bin 28 Jahre alt und komme gebürtig aus dem schönen Niederbayern. Ich wohne mittlerweile am Ammersee und arbeite im Raum München als Ingenieur.
-								Schon in meiner Kindheit konnte ich mich für alles Kreative begeistern. Ich habe schon immer gerne gezeichnet, gemalt und gebastelt. Ich wollte immer "Roboterbauer" werden
-								und hey, ich bin ziemlich nah dran gekommen. :D
-								In meiner Freizeit beschäftige ich mich gerne mit Kunst, Tanz oder auch den verschiedensten Sportarten. Ich liebe es neue Dinge auszuprobieren und mich selbst zu fordern.
-								Ich bin ein sehr neugieriger Mensch und probiere gerne neue Dinge aus.
-								Meine Familie und meine Freunde spielen eine große Rolle für mich und ich bin dankbar für jeden Menschen, der mich auf meiner Reise begeleitet. Ja auch dir! ;) Mein Ziel
-								ist es andere Menschen mit meiner Kunst zu berühren und ihnen ein Lächeln ins Gesicht zu zaubern oder sie zum Nachdenken anzuregen beziehungsweise in Erinnerungen schwelgen zu lassen.
-								Ich hoffe, dass ich mit meiner Kunst einen kleinen Beitrag dazu leisten kann, die Welt ein Stückchen schöner zu machen.
-								<br><br>
-								Tja... was kann ich noch schreiben, ich versuche stets ich selbst zu sein, ich hatte lange genug versucht anderen zu gefallen.
-								Also hey sei du selbst, weil alle anderen gibt's schon. :)
+							<article class="about-text active" data-text="de">
+								<h3>Servus, das bin ich!</h3>
+								<p>Ich heiße Fabian Riediger und liebe es, neue Dinge zu erschaffen. Ich lerne ständig dazu und versuche, jeden
+									Tag ein kleines bisschen mehr zu mir selbst zu finden. Aber mal von Anfang an: <br><br>
+									Ich bin 28 Jahre alt, komme gebürtig aus dem schönen Niederbayern und wohne mittlerweile am Ammersee. Beruflich
+									arbeite ich im Raum München als Ingenieur.<br>
+									Schon als Kind konnte ich mich für alles Kreative begeistern. Ich habe schon immer gerne gezeichnet, gemalt und gebastelt.
+									Ich wollte immer "Roboterbauer" werden und hey, so weit weg davon bin ich gar nicht gelandet. :D <br><br>
+									In meiner Freizeit beschäftige ich mich gerne mit Kunst (wer hätte das gedacht!), Tanz und verschiedensten Sportarten.
+									Ich liebe es mich selbst herauszufordern und immer wieder andere Seiten an mir zu entdecken. 
+									Meine Familie und meine Freunde spielen dabei eine große Rolle für mich und ich bin dankbar für jeden Menschen,
+									der mich auf meinem Weg begeleitet. Ja auch für dich! ;) <br><br>
+									Mit meiner Kunst möchte ich Menschen berühren, ihnen ein Lächeln ins Gesicht zaubern, sie zum Nachdenken bringen oder
+									Erinnerungen in ihnen wecken. Wenn ich damit einen kleinen Beitrag leisten kann, die Welt ein Stückchen schöner zu machen,
+									dann bedeutet mir das sehr viel.
+									<br><br>
+									Und was gibt es sonst noch zu sagen? Ich versuche stets ich selbst zu sein. Lange genug hatte ich versucht, anderen zu gefallen.
+									Also: Sei du selbst, weil alle anderen gibt's schon. :)
 
-							</p>
+								</p>
+							</article>
+							<article class="about-text" data-text="bairisch">
+								<h3>Servus, des bin i!</h3>
+								<p>I hoas Fabian Riediger und lieb's, neie Sachan zum erschaffn. I lern ständig dazua und vasuach, jedn
+									Dag a gloans bissal mehra zu mia selba zu findn. Aba moi vo Anfang o: <br><br>
+									I bi 28 Jahr oid, kimm gebürtig aus'm schena Niederbayern und wohn mittlaweile am Ammersee. Beruflich
+									arbat i im Raum München ois Ingenieur.<br>
+									Scho ois Kind hab i mi fia ois Kreative begeistan kinna. I hab scho oiwei gern zeichnet, gmoin und bastlt.
+									I woid oiwei "Roboterbaua" werdn und hey, so weid weg davo bi i goa ned glandet. :D <br><br>
+									In meina Freizeit beschäftig i mi gern mid Kunst (wer häd des denkt!), Tanz und vaschiedenste Sportartn.
+									I lieb's mi selba herauszufordan und oiwei wieda andane Seitn an mia zum entdeckn. 
+									Mei Familie und meine Freind spuin dabei a große Roin für mi und i bi dankbar fia jedn Menschn,
+									dea mi auf mein Weg begeleitet. Ja aa fia di! ;) <br><br>
+									Mid meina Kunst mecht i Menschn berührn, eana a Lächeln ins Gsicht zaubern, se zum Nachdenga bringa oda
+									Erinnerungen in eana wecka. Wenn i damid an gloan Beitrag leistn ka, d'Welt a Stiggal schena zum macha,
+									dann bedeit ma des sehr vui.
+									<br><br>
+									Und wos gibt's sonst no zum sang? I vasuach stets i selba zum sei. Lang gnua hab i vasuacht, andane zum gfoin.
+									Eiso: Sei du selba, weil olle andan gibt's scho. :)
+
+								</p>
+							</article>	
+						</div>
 					</div>
 				</section>
 
@@ -94,7 +126,7 @@
 		<!-- Scripts -->
 		<!-- Verknüpfung der externen JavaScript-Datei -->
    		<script src="../js/menu.js"></script>
-		<script src="../js/main.js"></script>
+		<script src="../js/change-lang.js"></script>
 
 	</body>
 </html>
