@@ -46,10 +46,10 @@ const galleryImages = [
 		caption: "Ohne Titel",
 		medium: "Digital Print on Canvas",
 		format: "80 x 80 cm",
-		link: "../gallery/human-bias/index.html"
+		link: "../gallery/ohne-titel/index.html"
 	},
 	{
-		src: "../Images/Artwork/Dummy_2.png",
+		src: "../Images/Artwork/human_bias.JPEG",
 		alt: "Human Bias",
 		caption: "Human Bias",
 		medium: "Pigmented Ink on Paper",
@@ -57,15 +57,15 @@ const galleryImages = [
 		link: "../gallery/human-bias/index.html"
 	},
 	{
-		src: "../Images/Artwork/Dummy_3.png",
+		src: "../Images/Artwork/Marilyn_popart.PNG",
 		alt: "Grace under their Gaze",
 		caption: "Grace under their Gaze",
 		medium: "Digital Drawing",
 		format: "Square",
-		link: "../gallery/human-bias/index.html"
+		link: "../gallery/grace-under-their-gaze/index.html"
 	},
 	{
-		src: "../Images/Artwork/Dummy_3.png",
+		src: "../Images/Artwork/OpeOpeVega.JPEG",
 		alt: "Between Heart and Mind",
 		caption: "Between Heart and Mind",
 		medium: "Colour Pencils on Paper",
@@ -73,20 +73,20 @@ const galleryImages = [
 		link: "../gallery/between-heart-and-mind/index.html"
 	},
 	{
-		src: "../Images/Artwork/Dummy_3.png",
+		src: "../Images/Artwork/venice.JPEG",
 		alt: "Venice",
 		caption: "Venice",
 		medium: "Pigmented Ink on Paper",
 		format: "DIN A4 Landscape",
-		link: "../gallery/human-bias/index.html"
+		link: "../gallery/venice/index.html"
 	},
 	{
-		src: "../Images/Artwork/Dummy_3.png",
+		src: "../Images/Artwork/GoodMood_GoodLuck.JPEG",
 		alt: "Good Mood = Good Luck",
 		caption: "Good Mood = Good Luck",
 		medium: "Colour Pencils on Paper",
 		format: "DIN A4 Portrait",
-		link: "../gallery/human-bias/index.html"
+		link: "../gallery/good-mood-good-luck/index.html"
 	},
 ];
 
