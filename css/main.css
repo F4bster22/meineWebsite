@@ -731,6 +731,19 @@ a {
 		box-sizing: border-box;
 	}
 
+	#section1.designArt {
+		display: flex;
+		height: auto;
+		background-color: #f7f1ed;
+		color: #3a0101; /* former: #8f3545 */
+		text-align: center;
+		align-items: flex-start;
+		justify-content: center;
+		margin: 0 auto;
+		padding: 6em 6em;
+		box-sizing: border-box;
+	}
+
 	.artwork-image,
 	.about-image,
 	.about-texts {
@@ -743,7 +756,8 @@ a {
 		width: 80%;
 		max-width: 800px;
 		display: flex;
-		padding-top: 1em;
+		padding-top: 0;
+		padding-left: 2em;
 	}
 
 	.about-image img {
@@ -772,11 +786,17 @@ a {
 		padding: 0 6em;
 		text-align: left;
 		font-size: 0.8em;
-		 align-self: flex-start;
+		align-self: flex-start;
+		hyphens: auto;
+		overflow-wrap: break-word;
+		word-break: normal;
 	}
 
 	.about-text {
 		display: none;
+		hyphens: auto;
+		overflow-wrap: break-word;
+		word-break: normal;
 	}
 
 	.about-text.active {

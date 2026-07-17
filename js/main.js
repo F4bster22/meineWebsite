@@ -41,15 +41,23 @@ checkHeaderVisibility();
 // Array mit den Bildern und Beschriftungen; jedes Bild ist ein Objekt mit den Eigenschaften src, alt und caption //
 const galleryImages = [
 	{
-		src: "../Images/Artwork/Dummy_1.png",
-		alt: "Ohne Titel",
-		caption: "Ohne Titel",
-		medium: "Digital Print on Canvas",
-		format: "80 x 80 cm",
-		link: "../gallery/ohne-titel/index.html"
+		src: "../Images/Artwork/Clownfish.webp",
+		alt: "Clownfish",
+		caption: "Clownfish",
+		medium: "Colour Pencils on Paper",
+		format: "DIN A5 Landscape",
+		link: "../gallery/clownfish/index.html"
 	},
 	{
-		src: "../Images/Artwork/human_bias.JPEG",
+		src: "../Images/Artwork/Finger_Heart.webp",
+		alt: "Finger Heart",
+		caption: "Finger Heart",
+		medium: "Pigmented Ink on Paper",
+		format: "DIN A5 Portrait",
+		link: "../gallery/finger-heart/index.html"
+	},
+	{
+		src: "../Images/Artwork/human_bias.webp",
 		alt: "Human Bias",
 		caption: "Human Bias",
 		medium: "Pigmented Ink on Paper",
@@ -57,7 +65,7 @@ const galleryImages = [
 		link: "../gallery/human-bias/index.html"
 	},
 	{
-		src: "../Images/Artwork/Marilyn_popart.PNG",
+		src: "../Images/Artwork/Marilyn_popart.webp",
 		alt: "Grace under their Gaze",
 		caption: "Grace under their Gaze",
 		medium: "Digital Drawing",
@@ -65,7 +73,15 @@ const galleryImages = [
 		link: "../gallery/grace-under-their-gaze/index.html"
 	},
 	{
-		src: "../Images/Artwork/OpeOpeVega.JPEG",
+		src: "../Images/Artwork/GoodMood_GoodLuck.webp",
+		alt: "Good Mood = Good Luck",
+		caption: "Good Mood = Good Luck",
+		medium: "Colour Pencils on Paper",
+		format: "DIN A4 Portrait",
+		link: "../gallery/good-mood-good-luck/index.html"
+	},
+	{
+		src: "../Images/Artwork/OpeOpeVega.webp",
 		alt: "Between Heart and Mind",
 		caption: "Between Heart and Mind",
 		medium: "Colour Pencils on Paper",
@@ -73,7 +89,7 @@ const galleryImages = [
 		link: "../gallery/between-heart-and-mind/index.html"
 	},
 	{
-		src: "../Images/Artwork/venice.JPEG",
+		src: "../Images/Artwork/venice.webp",
 		alt: "Venice",
 		caption: "Venice",
 		medium: "Pigmented Ink on Paper",
@@ -81,12 +97,12 @@ const galleryImages = [
 		link: "../gallery/venice/index.html"
 	},
 	{
-		src: "../Images/Artwork/GoodMood_GoodLuck.JPEG",
-		alt: "Good Mood = Good Luck",
-		caption: "Good Mood = Good Luck",
-		medium: "Colour Pencils on Paper",
-		format: "DIN A4 Portrait",
-		link: "../gallery/good-mood-good-luck/index.html"
+		src: "../Images/Artwork/Butterflies.webp",
+		alt: "Ohne Titel",
+		caption: "Ohne Titel",
+		medium: "Digital Print on Canvas",
+		format: "80 x 80 cm",
+		link: "../gallery/blooderflies/index.html"
 	},
 ];
 
