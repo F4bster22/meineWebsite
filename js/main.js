@@ -72,7 +72,7 @@ const galleryImages = [
 		format: "Square",
 		link: "../gallery/grace-under-their-gaze/index.html"
 	},
-	{
+	/*{
 		src: "../Images/Artwork/GoodMood_GoodLuck.webp",
 		alt: "Good Mood = Good Luck",
 		caption: "Good Mood = Good Luck",
@@ -103,7 +103,7 @@ const galleryImages = [
 		medium: "Digital Print on Canvas",
 		format: "80 x 80 cm",
 		link: "../gallery/blooderflies/index.html"
-	},
+	},*/
 ];
 
 // Variable, um das aktuelle Bild zu verfolgen (merkt sich das aktuelle Bild; Liste beginnt in Java bei 0) //
