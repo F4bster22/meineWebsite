@@ -263,7 +263,7 @@ a {
 		display: block;
 		width: 35%;
 		height: 100%;
-		margin: 4em auto;
+		margin: 3em auto;
 		border-top: 2px solid #88653e;
 		border-bottom: 2px solid #88653e;
 	}
@@ -662,22 +662,28 @@ a {
 /* Section ---------------------------------------------------------------- */
 
 	#section1 {
-		height: 48em;
 		background-color: #ffcf94;
 		color: #3a0101; /* former: #8f3545 */
 		text-align: center;
+		padding-bottom: 4em;
 	}
 
 	#section1 h2 {
 		font-family: "Cedarville Cursive", Helvetica, sans-serif;
 		font-size: 2em;
-	}	
+	}
+	
+	#introText {
+		max-width: 135vh;
+		position: center;
+		margin: 0 auto;
+	}
 
 	#aufebtn {
 		display: block;
 		font-size: 2em;
 		font-family: "Cedarville Cursive", Helvetica, sans-serif;
-		margin: 2em 0 3em 0;
+		margin: 2em 0 2em 0;
 		padding-top: 0.5em;
 	}
 
@@ -726,6 +732,7 @@ a {
 		color: #3a0101; /* former: #8f3545 */
 		text-align: center;
 		padding-top: 1em;
+		padding-bottom: 0;
 	}
 
 	#section1.design3 {
@@ -1050,3 +1057,33 @@ a {
 		padding-top: 1em;
 	}
 
+
+/* Mobile Version ------------------------------*/
+	/* About me */
+	@media screen and (max-width: 800px) {
+	#section1.design3 {
+		flex-direction: column;
+		min-height: auto;
+	}
+
+	#section1.design3 > .about-image,
+	#section1.design3 > .about-text {
+		flex: 0 0 auto;
+		width: 100%;
+		padding: 2em 1.5em;
+	}
+
+	.about-image img {
+		max-width: 280px;
+	}
+
+	.about-text {
+		text-align: center;
+	}
+
+	#gallery-image {
+		height: auto;
+		max-height: 55vh;
+		max-width: 90vw;
+	}
+}

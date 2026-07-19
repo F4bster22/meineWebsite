@@ -44,66 +44,66 @@ const galleryImages = [
 		src: "../Images/Artwork/Clownfish.webp",
 		alt: "Clownfish",
 		caption: "Clownfish",
-		medium: "Colour Pencils on Paper",
-		format: "DIN A5 Landscape",
+		medium: "Farbstifte auf Papier",
+		format: "DIN A5 Querformat",
 		link: "../gallery/clownfish/index.html"
 	},
 	{
 		src: "../Images/Artwork/Finger_Heart.webp",
 		alt: "Finger Heart",
 		caption: "Finger Heart",
-		medium: "Pigmented Ink on Paper",
-		format: "DIN A5 Portrait",
+		medium: "Pigmentierte Tinte auf Papier",
+		format: "DIN A5 Hochformat",
 		link: "../gallery/finger-heart/index.html"
 	},
 	{
 		src: "../Images/Artwork/human_bias.webp",
 		alt: "Human Bias",
 		caption: "Human Bias",
-		medium: "Pigmented Ink on Paper",
-		format: "DIN A5 Portrait",
+		medium: "Pigmentierte Tinte auf Papier",
+		format: "DIN A5 Hochformat",
 		link: "../gallery/human-bias/index.html"
 	},
 	{
 		src: "../Images/Artwork/Marilyn_popart.webp",
 		alt: "Grace under their Gaze",
 		caption: "Grace under their Gaze",
-		medium: "Digital Drawing",
-		format: "Square",
+		medium: "Digital",
+		format: "Quadratisch",
 		link: "../gallery/grace-under-their-gaze/index.html"
 	},
-	/*{
+	{
 		src: "../Images/Artwork/GoodMood_GoodLuck.webp",
 		alt: "Good Mood = Good Luck",
 		caption: "Good Mood = Good Luck",
-		medium: "Colour Pencils on Paper",
-		format: "DIN A4 Portrait",
+		medium: "Farbstifte auf Papier",
+		format: "DIN A4 Hochformat",
 		link: "../gallery/good-mood-good-luck/index.html"
 	},
 	{
 		src: "../Images/Artwork/OpeOpeVega.webp",
 		alt: "Between Heart and Mind",
 		caption: "Between Heart and Mind",
-		medium: "Colour Pencils on Paper",
-		format: "DIN A4 Landscape",
+		medium: "Farbstifte auf Papier",
+		format: "DIN A4 Querformat",
 		link: "../gallery/between-heart-and-mind/index.html"
 	},
 	{
 		src: "../Images/Artwork/venice.webp",
 		alt: "Venice",
 		caption: "Venice",
-		medium: "Pigmented Ink on Paper",
-		format: "DIN A4 Landscape",
+		medium: "Pigmentierte Tinte auf Papier",
+		format: "DIN A4 Querformat",
 		link: "../gallery/venice/index.html"
 	},
 	{
 		src: "../Images/Artwork/Butterflies.webp",
-		alt: "Ohne Titel",
-		caption: "Ohne Titel",
-		medium: "Digital Print on Canvas",
+		alt: "Blooderflies",
+		caption: "Blooderflies",
+		medium: "Digitaldruck auf Leinwand",
 		format: "80 x 80 cm",
 		link: "../gallery/blooderflies/index.html"
-	},*/
+	},
 ];
 
 // Variable, um das aktuelle Bild zu verfolgen (merkt sich das aktuelle Bild; Liste beginnt in Java bei 0) //
