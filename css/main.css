@@ -78,7 +78,7 @@ a {
 		}
 
 	body {
-		background: #c9bfb7; /* #eee9e9 vorher */
+		background: #1d242a; /* #c9bfb7 vorher */
 		color: #000000; /* Textfarbe */
 		font-family: "Lora", Helvetica, sans-serif;
 		font-size: 15pt;
@@ -509,7 +509,7 @@ a {
 		text-align: center;
 		font-family: "Cedarville Cursive", cursive, sans-serif;
 		font-size: 3em;
-		line-height: 1.0em
+		line-height: 1.0em;
 	}
 
 	#starter h2 {
@@ -557,14 +557,23 @@ a {
 		flex-direction: column; /* Stapelt die Elemente innerhalb des Starters untereinander */
 		justify-content: center; /* Richtet alle Texte und Buttons zusätzlich hotizontal mittig aus */
 		cursor: default;
-		height: 130vh; /* vh = Viewport Height in % Body nimmt exakt 100% der Bildschirmhöhe ein */
+		height: 140vh; /* vh = Viewport Height in % Body nimmt exakt 100% der Bildschirmhöhe ein */
 		min-height: 5em;
 		overflow: hidden;
 		text-align: center;
 		font-family: "Cedarville Cursive", cursive, sans-serif;
 		font-size: 3em;
 		line-height: 1.0em;
-		transform: translateY(-1.7em);
+		background-image: url("../Images/background_gallery.png");
+		background-attachment: scroll; /* Sorgt dafür, dass das Bild mitscrollt (alternativ fixed) */
+		background-position: center -180px;
+		background-repeat: no-repeat;
+		background-size: 140%;
+		padding-top: 0;
+	}
+
+	#starter2 h2{
+		transform: translateY(-160px);
 	}
 	
 	#starter3 {
@@ -594,7 +603,7 @@ a {
 		font-family: "Cedarville Cursive", cursive, sans-serif;
 		font-size: 3em;
 		line-height: 1.0em;
-		transform: translateY(+1em);
+		transform: translateY(+1.1em);
 	}
 
 	#starterBasic {
@@ -602,14 +611,20 @@ a {
 		flex-direction: column; /* Stapelt die Elemente innerhalb des Starters untereinander */
 		justify-content: center; /* Richtet alle Texte und Buttons zusätzlich hotizontal mittig aus */
 		cursor: default;
-		height: 26.5vh; /* vh = Viewport Height in % Body nimmt exakt 100% der Bildschirmhöhe ein */
+		height: 4.7em; /* vh = Viewport Height in % Body nimmt exakt 100% der Bildschirmhöhe ein */
 		min-height: 3em;
 		overflow: hidden;
 		text-align: center;
 		font-family: "Cedarville Cursive", cursive, sans-serif;
 		font-size: 3em;
 		line-height: 1.0em;
-		transform: translateY(+1.5em);
+		background-color: #ebd6cd;
+		margin-bottom: 0em;
+		padding-bottom: 0em;
+	}
+
+	#starterBasic h2{
+		padding-top: 2em;
 	}
 	
 
@@ -619,7 +634,7 @@ a {
 	body.landingpage #page_cpl {
 		background-image: url("../Images/background_starter.png");
 		background-attachment: scroll; /* Sorgt dafür, dass das Bild mitscrollt (alternativ fixed) */
-		background-position: center center;
+		background-position: center 40%;
 		background-repeat: no-repeat;
 		background-size: cover;
 		padding-top: 0;
@@ -640,14 +655,6 @@ a {
 		background-color: #1a1722;
 	}
 
-	body.chapter1 #page_cpl {
-		background-image: url("../Images/background_gallery.png");
-		background-attachment: scroll; /* Sorgt dafür, dass das Bild mitscrollt (alternativ fixed) */
-		background-position: center -180px;
-		background-repeat: no-repeat;
-		background-size: 140%;
-		padding-top: 0;
-	}
 
 	body.chapter2 #page_cpl {
 		background-image: url("../Images/background_3Ddesign2.png");
@@ -741,10 +748,10 @@ a {
 		background-repeat: no-repeat;
 		background-size: cover;
 		height: 8em;
-		background-color: #c9bfb7;
+		background-color: #ecbd97;
 		color: #3a0101; /* former: #8f3545 */
 		text-align: center;
-		padding-top: 1em;
+		padding-top: 0;
 		padding-bottom: 0;
 	}
 
@@ -783,10 +790,10 @@ a {
 
 	.artwork-image img,
 	.about-image img {
-		max-height: 900px;
+		max-height: 100vh;
 		display: flex;
 		justify-content: center;
-		padding: 0 6em;
+		padding: 0 6%;
 	}
 
 	.about-image img {
@@ -853,7 +860,7 @@ a {
 		justify-content: center;
 		gap: 0.1em;
 		margin: 0 auto 0 auto;
-		padding-top: 5em;
+		padding-top: 100px;
 		padding-bottom: 0.5em;
 	}
 
@@ -875,7 +882,7 @@ a {
 
 	#gallery-caption-main {
 		font-family: "Cedarville Cursive", cursive, sans-serif;
-		margin-top: 1.8em;
+		margin-top: 80px;
 		font-size: 2em;
 		letter-spacing: 0.05em;
 	}
@@ -908,6 +915,7 @@ a {
 
 	#details_all {
 		text-align: center;
+		transform: translateY(-10px);
 	}
 
 	#details {
@@ -935,8 +943,11 @@ a {
 		color: #000000;
 		font-size: 1em;
 		font-family: "Cedarville Cursive", Helvetica, sans-serif;
-		transform:translateY(2em);
 		padding: 0 0 0 1em;
+	}
+
+	#return-btn p{
+		margin-bottom: 0;
 	}
 
 	#section2.design2 {
@@ -959,26 +970,31 @@ a {
 /* Basic Layout --------------------------------------------------- */
 
 	.basic {
+		min-height: 100vh;
 		padding: 12em 0 9em 0;
 		text-align: center;
+		color: #b1a59b;
 	}
 
 	.basic h2 {
 		font-family: "Cedarville Cursive", Helvetica, sans-serif;
 		font-size: 3em;
 		letter-spacing: 0.05em;
+		color: #b1a59b;
 	}
 
 	#imprint {
 		background-color: #b1a59b;
 		background-size: cover;
 		padding-top: 7em;
+		color: #1d242a;
 	}
 
 	#imprint h2 {
 		font-family: Helvetica, sans-serif;
 		font-size: 1.5em;
 		letter-spacing: 0.05em;
+		color: #1d242a;
 	}
 
 	#imprint .content {
@@ -1174,6 +1190,11 @@ a {
 		margin-top: 0;
 		padding-top: 1em;
 		font-size: 1.2em;
+	}
+
+	#starter4 h2,
+	#starterBasic h2{
+		padding-top: 2em;
 	}
 
 	/* Hintergrundbilder auf Unterseiten */
