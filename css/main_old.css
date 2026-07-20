@@ -58,7 +58,7 @@ a {
 	font-family: "Amatic SC";
 	src: url("../fonts/AmaticSC-Bold.ttf") format("truetype");
 	font-weight: 600;
-	font-style: normal;
+	font-style: bold;
 	font-display: swap;
 }
 
@@ -99,7 +99,7 @@ a {
 			}
 		}
 
-		@media screen and (max-width: 720px) {
+		@media screen and (max-width: 736px) {
 			body {
 				font-size: 11pt;
 				letter-spacing: 0.0375em;
@@ -149,7 +149,7 @@ a {
 		line-height: 1.75em;
 	}
 
-		@media screen and (max-width: 720px) {
+		@media screen and (max-width: 736px) {
 			h2 {
 				font-size: 1.1em;
 				line-height: 1.65em;
@@ -161,7 +161,7 @@ a {
 		line-height: 1.75em;
 	}
 
-		@media screen and (max-width: 720px) {
+		@media screen and (max-width: 736px) {
 			h3 {
 				font-size: 1em;
 				line-height: 1.65em;
@@ -268,12 +268,6 @@ a {
 		border-bottom: 2px solid #88653e;
 	}
 
-		@media screen and (max-width: 720px) {
-			.separation-line {
-				width: 66%;
-			}
-		}
-
 /* Menu --------------------------------------------------------------------------- */
 
 	#page_cpl:before {
@@ -330,7 +324,7 @@ a {
 					text-transform: uppercase;
 				}
 
-					@media screen and (max-width: 720px) {
+					@media screen and (max-width: 736px) {
 						#menu ul > li > a {
 							line-height: 2em;
 						}
@@ -354,7 +348,7 @@ a {
  			display: none;
 		}
 
-		@media screen and (max-width: 720px) {
+		@media screen and (max-width: 736px) {
 
 			#menu {
 				padding: 3em 1.5em;
@@ -425,7 +419,7 @@ a {
 				line-height: inherit;
 			}
 
-				@media screen and (max-width: 720px) {
+				@media screen and (max-width: 736px) {
 
 					#header h1 a {
 						font-size: 0.8em;
@@ -485,7 +479,7 @@ a {
 							}
 
 
-						@media screen and (max-width: 720px) {
+						@media screen and (max-width: 736px) {
 							#header nav > ul > li > a {
 								padding: 0 0 0 1.5em;
 							}
@@ -546,7 +540,7 @@ a {
 		background-size: contain;
 	}
 
-		@media screen and (max-width: 720px) {
+		@media screen and (max-width: 736px) {
 			#starter h2 {
 				font-size: 1em;
 			}
@@ -632,7 +626,6 @@ a {
 
 	body.mobile.landingpage #page_cpl {
 		background: none;
-		background-color: #f8f0e6;
 	}
 
 
@@ -706,12 +699,6 @@ a {
 		background-size: contain;
 		transform: rotate(180deg);
 	}
-
-		@media screen and (max-width: 720px) {
-			#aufebtn {
-				font-size: 1.5em;
-			}
-		}
 
 	#gallery-link {
 		border-color: #88653e;
@@ -1002,15 +989,13 @@ a {
 		display: flex;
 		justify-content: center;
 		gap: 0.5em;
-		margin: 0 0 0.5em 1em;
+		margin: 0 0 0.5em 2em;
 	}
 
 	.icons a {
 		font-size: 1.5em;
 		color: #ffefdb;
 		transition: color 0.2s ease;
-		width: 2em;;
-		height: 2em;
 	}
 
 	.icons a:hover {
@@ -1071,198 +1056,66 @@ a {
 		padding-top: 1em;
 	}
 
+
 /* Mobile Version ------------------------------*/
-
-@media screen and (max-width: 720px) {
-	/* Grundlayout */
-	body {
-		font-size: 10pt;
-		letter-spacing: 0.0375em;
-		overflow-x: hidden;
-	}
-
-	h1, h2, h3, h4, h5, h6 {
-		letter-spacing: 0.12em;
-	}
-
-	h2 {
-		font-size: 1.2em;
-		line-height: 1.4em;
-	}
-
-	h3 {
-		font-size: 1.05em;
-		line-height: 1.4em;
-	}
-
-	p {
-		line-height: 1.45em;
-		margin-bottom: 1.4em;
-	}
-
-	/* Header / Menü */
-	#header h1 {
-		left: 0.9em;
-		font-size: 1.1em;
-		letter-spacing: 0.12em;
-		max-width: 70vw;
-		overflow: hidden;
-		white-space: nowrap;
-	}
-
-	#header nav {
-		font-size: 1.25em;
-	}
-
-	#header nav > ul > li > a {
-		padding: 0 0.9em;
-		letter-spacing: 0.15em;
-	}
-
-	#header nav > ul > li > a.menuIcon::after {
-		margin: 0 0 0 0.7em;
-	}
-
-	#menu {
-		width: 18em;
-		max-width: 85vw;
-		padding: 3em 1.5em;
-	}
-
-	#menu ul > li {
-		font-size: 1.4em;
-	}
-
-	#menu ul > li > a {
-		letter-spacing: 0.3em;
-		line-height: 2em;
-	}
-
-	/* Starter-Bereiche */
-	#starter,
-	#starter2,
-	#starter3,
-	#starter4,
-	#starterBasic {
-		font-size: 2em;
-		line-height: 1.1em;
-		transform: none;
-	}
-
-	#starter {
-		height: 100svh;
-	}
-
-	#starter2,
-	#starter3 {
-		height: 80svh;
-	}
-
-	#starter4,
-	#starterBasic {
-		height: 24svh;
-		min-height: 6em;
-	}
-
-	#starter h2 {
-		font-size: 1.5em;
-		padding: 3em 1em;
-		transform: none;
-	}
-
-	#starter .more.scrolly {
-		margin-top: 0;
-		padding-top: 1em;
-		font-size: 1.2em;
-	}
-
-	/* Hintergrundbilder auf Unterseiten */
-	body.chapter1 #page_cpl,
-	body.chapter2 #page_cpl {
-		background-position: center top;
-		background-size: cover;
-	}
-
-	/* Allgemeine Sections */
-	#section1 {
-		padding-left: 1.25em;
-		padding-right: 1.25em;
-	}
-
-	#introText {
-		max-width: none;
-		width: 100%;
-		padding: 0;
-	}
-
-	#gallery-link {
-		font-size: 1.5em;
-		max-width: 9em;
-		padding: 0.8em 1em;
-	}
-
-	#section1.design2 {
-		height: auto;
-		min-height: 7em;
-		padding: 1.5em 1em;
-	}
-
-	/* About- und Artwork-Seiten: aus zwei Spalten wird eine Spalte */
-	#section1.design3,
-	#section1.designArt {
+	/* About me */
+@media screen and (max-width: 800px) {
+	#section1.design3 {
 		flex-direction: column;
-		align-items: center;
-		justify-content: flex-start;
+		min-height: auto;
 		width: 100%;
-		padding: 3em 1.25em;
-		gap: 2em;
 	}
 
 	#section1.design3 > .about-image,
-	#section1.design3 > .about-texts,
-	#section1.designArt > .artwork-image,
-	#section1.designArt > .about-texts {
+	#section1.design3 > .about-text {
 		flex: none;
 		width: 100%;
 		max-width: none;
-		padding: 0;
+		box-sizing: border-box;
+		padding: 2em 1.5em;
 	}
 
-	.artwork-image img,
 	.about-image img {
-		max-width: 90vw;
-		max-height: 55vh;
-		width: auto;
+		max-width: 280px;
+		width: 100%;
 		height: auto;
-		padding: 0;
-		margin: 0 auto;
-		object-fit: contain;
 	}
 
-	.about-texts {
-		width: 100%;
-		max-width: none;
-		padding: 0;
-		font-size: 0.95em;
+	.about-text {
+		display: block;
 		text-align: center;
 	}
 
-	/* Wichtig für deinen Sprachwechsel: nur die aktive Sprache sichtbar machen */
-	.about-text {
+	.about-text .major {
+		max-width: 100%;
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	#gallery-image {
+		height: auto;
+		max-height: 55vh;
+		max-width: 90vw;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	#section1.design3 .about-text {
 		display: none;
 		width: 100%;
 		max-width: none;
-		min-width: 0;
 		box-sizing: border-box;
 		text-align: center;
+		padding: 0;
 	}
 
-	.about-text.active {
+	#section1.design3 .about-text.active {
 		display: block;
+		padding: 0;
 	}
 
-	.about-text.active .major,
-	.about-text.active p {
+	#section1.design3 .about-text.active .major,
+	#section1.design3 .about-text.active p {
 		width: 100%;
 		max-width: none;
 		min-width: 0;
@@ -1270,201 +1123,7 @@ a {
 		white-space: normal;
 		word-break: normal;
 		overflow-wrap: break-word;
-		hyphens: auto;
-		line-height: 1.45em;
-		padding: 0;
-	}
-
-	.lang-btn {
-		font-size: 0.9rem;
-		padding: 0.45rem 0.9rem;
-		margin-bottom: 0.5em;
-	}
-
-	/* Galerie */
-	.gallery-cpl {
-		background-position: center top;
-		background-size: cover;
-	}
-
-	.gallery-container {
-		grid-template-columns: 2.5em minmax(0, 1fr) 2.5em;
-		width: 100%;
-		padding: 3em 0.5em 1em 0.5em;
-		gap: 0.2em;
-	}
-
-	.gallery-image-wrap {
-		width: 100%;
-		min-width: 0;
-		flex: none;
-	}
-
-	#gallery-image-link {
-		width: 100%;
-	}
-
-	#gallery-image {
-		max-width: 78vw;
-		max-height: 50vh;
-		width: auto;
-		height: auto;
-		object-fit: contain;
-	}
-
-	#gallery-caption-main {
-		font-size: 1.5em;
-		line-height: 1.2em;
-		margin-top: 1em;
-	}
-
-	.gallery-btn {
-		font-size: 1.6em;
-		margin: 0;
-		padding: 0;
-	}
-
-	#details {
-		width: 92%;
-		height: auto;
-		margin: 0 auto;
-		padding: 1em 0 4em 0;
-		display: flex;
-		flex-wrap: wrap;
-		align-items: flex-start;
-		justify-content: center;
-		gap: 0.75em;
-		line-height: 1.25em;
-		font-size: 0.9em;
-	}
-
-	#details p,
-	#details li,
-	#details div {
-		min-width: 0;
-		hyphens: auto;
-		overflow-wrap: break-word;
-	}
-
-	#return-btn {
-		display: inline-block;
-		transform: none;
-		padding: 0.5em 1em;
-		margin-top: 1em;
-	}
-
-	/* Basic / Impressum */
-	.basic {
-		padding: 7em 1.25em 5em 1.25em;
-	}
-
-	.basic h2 {
-		font-size: 2.2em;
-	}
-
-	#imprint {
-		padding: 5em 1.25em 2em 1.25em;
-	}
-
-	#imprint .content {
-		max-width: none;
-		width: 100%;
-		font-size: 0.95em;
-		line-height: 1.45em;
-	}
-
-	/* Footer */
-	#footer {
-		padding: 2em 1.25em 1em 1.25em;
-	}
-
-	.icons {
-		margin: 0 0 0.75em 1em;
-		gap: 0.75em;
-	}
-
-	.copyright {
-		flex-direction: column;
-		gap: 0.25em;
-		font-size: 0.75em;
 		line-height: 1.4em;
-	}
-
-	.copyright li + li::before {
-		content: "";
-		margin: 0;
-	}
-
-	.imprint {
-		font-size: 0.8em;
-		padding-top: 1.2em;
+		padding: 0;
 	}
 }
-
-/* @media screen and (max-width: 480px) {
-	body {
-		font-size: 10.5pt;
-	}
-
-	#header h1 {
-		font-size: 0.75em;
-		letter-spacing: 0.08em;
-		max-width: 62vw;
-	}
-
-	#header nav > ul > li > a span {
-		display: none;
-	}
-
-	#menu ul > li > a {
-		letter-spacing: 0.22em;
-	}
-
-	#starter,
-	#starter2,
-	#starter3,
-	#starter4,
-	#starterBasic {
-		font-size: 1.7em;
-	}
-
-	#section1.design3,
-	#section1.designArt {
-		padding: 2.5em 1em;
-	}
-
-	.about-texts {
-		font-size: 0.9em;
-	}
-
-	.artwork-image img,
-	.about-image img {
-		max-width: 88vw;
-		max-height: 48vh;
-	}
-
-	.gallery-container {
-		grid-template-columns: 2em minmax(0, 1fr) 2em;
-		padding-left: 0.25em;
-		padding-right: 0.25em;
-	}
-
-	#gallery-image {
-		max-width: 76vw;
-		max-height: 45vh;
-	}
-
-	#gallery-caption-main {
-		font-size: 1.35em;
-	}
-
-	#details {
-		width: 94%;
-		font-size: 0.85em;
-	}
-
-	#gallery-link {
-		font-size: 1.35em;
-	}
-} */
-

@@ -2,7 +2,7 @@ const pagebody = document.body;
 
 // Prüfen, ob die Seite in mobiler Breite angezeigt wird
 function checkMobile() {
-  if (window.matchMedia('(max-width: 736px)').matches) {
+  if (window.matchMedia('(max-width: 720px)').matches) {
     pagebody.classList.add('mobile');
   } else {
     pagebody.classList.remove('mobile');
