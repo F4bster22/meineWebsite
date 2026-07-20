@@ -41,7 +41,7 @@ checkHeaderVisibility();
 // Array mit den Bildern und Beschriftungen; jedes Bild ist ein Objekt mit den Eigenschaften src, alt und caption //
 const galleryImages = [
 	{
-		src: "../Images/Artwork/Clownfish.webp",
+		src: "../Images/Artwork/Clownfish.png",
 		alt: "Clownfish",
 		caption: "Clownfish",
 		medium: "Farbstifte auf Papier",
@@ -49,7 +49,7 @@ const galleryImages = [
 		link: "../gallery/clownfish/index.html"
 	},
 	{
-		src: "../Images/Artwork/Finger_Heart.webp",
+		src: "../Images/Artwork/Finger_Heart.png",
 		alt: "Finger Heart",
 		caption: "Finger Heart",
 		medium: "Pigmentierte Tinte auf Papier",
@@ -57,7 +57,7 @@ const galleryImages = [
 		link: "../gallery/finger-heart/index.html"
 	},
 	{
-		src: "../Images/Artwork/human_bias.webp",
+		src: "../Images/Artwork/human_bias.png",
 		alt: "Human Bias",
 		caption: "Human Bias",
 		medium: "Pigmentierte Tinte auf Papier",
@@ -73,7 +73,7 @@ const galleryImages = [
 		link: "../gallery/grace-under-their-gaze/index.html"
 	},
 	{
-		src: "../Images/Artwork/GoodMood_GoodLuck.webp",
+		src: "../Images/Artwork/GoodMood_GoodLuck.png",
 		alt: "Good Mood = Good Luck",
 		caption: "Good Mood = Good Luck",
 		medium: "Farbstifte auf Papier",
@@ -81,7 +81,7 @@ const galleryImages = [
 		link: "../gallery/good-mood-good-luck/index.html"
 	},
 	{
-		src: "../Images/Artwork/OpeOpeVega.webp",
+		src: "../Images/Artwork/OpeOpeVega.png",
 		alt: "Between Heart and Mind",
 		caption: "Between Heart and Mind",
 		medium: "Farbstifte auf Papier",
@@ -89,7 +89,7 @@ const galleryImages = [
 		link: "../gallery/between-heart-and-mind/index.html"
 	},
 	{
-		src: "../Images/Artwork/venice.webp",
+		src: "../Images/Artwork/venice.png",
 		alt: "Venice",
 		caption: "Venice",
 		medium: "Pigmentierte Tinte auf Papier",

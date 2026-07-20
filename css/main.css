@@ -770,11 +770,10 @@ a {
 
 	.artwork-image img,
 	.about-image img {
-		width: 80%;
-		max-width: 800px;
+		max-height: 900px;
 		display: flex;
-		padding-top: 0;
-		padding-left: 2em;
+		justify-content: center;
+		padding: 0 6em;
 	}
 
 	.about-image img {
