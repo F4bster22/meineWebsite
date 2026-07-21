@@ -149,7 +149,7 @@ a {
 		line-height: 1.75em;
 	}
 
-		@media screen and (max-width: 720px) {
+		@media screen and (max-width: 720px), screen and (orientation: portrait) {
 			h2 {
 				font-size: 1.1em;
 				line-height: 1.65em;
@@ -161,7 +161,7 @@ a {
 		line-height: 1.75em;
 	}
 
-		@media screen and (max-width: 720px) {
+		@media screen and (max-width: 720px), screen and (orientation: portrait) {
 			h3 {
 				font-size: 1em;
 				line-height: 1.65em;
@@ -268,7 +268,7 @@ a {
 		border-bottom: 2px solid #88653e;
 	}
 
-		@media screen and (max-width: 720px) {
+		@media screen and (max-width: 720px), screen and (orientation: portrait) {
 			.separation-line {
 				width: 66%;
 			}
@@ -330,7 +330,7 @@ a {
 					text-transform: uppercase;
 				}
 
-					@media screen and (max-width: 720px) {
+					@media screen and (max-width: 720px), screen and (orientation: portrait) {
 						#menu ul > li > a {
 							line-height: 2em;
 						}
@@ -354,7 +354,7 @@ a {
  			display: none;
 		}
 
-		@media screen and (max-width: 720px) {
+		@media screen and (max-width: 720px), screen and (orientation: portrait) {
 
 			#menu {
 				padding: 3em 1.5em;
@@ -425,7 +425,7 @@ a {
 				line-height: inherit;
 			}
 
-				@media screen and (max-width: 720px) {
+				@media screen and (max-width: 720px), screen and (orientation: portrait) {
 
 					#header h1 a {
 						font-size: 0.8em;
@@ -485,7 +485,7 @@ a {
 							}
 
 
-						@media screen and (max-width: 720px) {
+						@media screen and (max-width: 720px), screen and (orientation: portrait) {
 							#header nav > ul > li > a {
 								padding: 0 0 0 1.5em;
 							}
@@ -546,7 +546,7 @@ a {
 		background-size: contain;
 	}
 
-		@media screen and (max-width: 720px) {
+		@media screen and (max-width: 720px), screen and (orientation: portrait) {
 			#starter h2 {
 				font-size: 1em;
 			}
@@ -577,6 +577,11 @@ a {
 	}
 	
 	#starter3 {
+		background-image: url("../Images/background_3Ddesign2.png");
+		background-attachment: scroll; /* Sorgt dafür, dass das Bild mitscrollt (alternativ fixed) */
+		background-position: center -140px;
+		background-repeat: no-repeat;
+		background-size: 140%;
 		display: flex; /* Aktiviert das flexible Box-Modell für den Start. Es macht den Starter zu einem Container, der seine inneren Elemente spielend leicht anordnen kann. */
 		flex-direction: column; /* Stapelt die Elemente innerhalb des Starters untereinander */
 		justify-content: center; /* Richtet alle Texte und Buttons zusätzlich hotizontal mittig aus */
@@ -588,7 +593,10 @@ a {
 		font-family: "Cedarville Cursive", cursive, sans-serif;
 		font-size: 3em;
 		line-height: 1.0em;
-		transform: translateY(+0.5em);
+	}
+
+	#starter3 h2{
+		transform: translateY(+20px);
 	}
 
 	#starter4 {
@@ -657,11 +665,6 @@ a {
 
 
 	body.chapter2 #page_cpl {
-		background-image: url("../Images/background_3Ddesign2.png");
-		background-attachment: scroll; /* Sorgt dafür, dass das Bild mitscrollt (alternativ fixed) */
-		background-position: center -140px;
-		background-repeat: no-repeat;
-		background-size: 140%;
 		padding-top: 0;
 	}
 
@@ -714,7 +717,7 @@ a {
 		transform: rotate(180deg);
 	}
 
-		@media screen and (max-width: 720px) {
+		@media screen and (max-width: 720px), screen and (orientation: portrait) {
 			#aufebtn {
 				font-size: 1.5em;
 			}
@@ -1090,7 +1093,7 @@ a {
 
 /* Mobile Version ------------------------------*/
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 720px), screen and (orientation: portrait) {
 	/* Grundlayout */
 	body {
 		font-size: 10pt;
@@ -1170,9 +1173,24 @@ a {
 		height: 100svh;
 	}
 
-	#starter2,
+	#starter2 {
+		height: 90svh;
+		transform: none;
+
+		background-size: cover;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-color: #1d242a;
+	}
+
 	#starter3 {
-		height: 80svh;
+		height: 100svh;
+		transform: none;
+
+		background-size: 440%;
+		background-position: bottom center;
+		background-repeat: no-repeat;
+		background-color: #1d242a;
 	}
 
 	#starter4,
@@ -1187,6 +1205,20 @@ a {
 		transform: none;
 	}
 
+	#starter2 h2 {
+		font-size: 2em;
+		transform: translateY(-50%);
+	}
+
+	#starter3 h2 {
+		font-size: 2em;
+		position: center;
+		background-color: #f3e8e3a6;
+		margin: 1em 1em;
+		border-radius: 1em;
+		transform: translateY(10px);
+	}
+
 	#starter .more.scrolly {
 		margin-top: 0;
 		padding-top: 1em;
@@ -1198,10 +1230,14 @@ a {
 		padding-top: 2em;
 	}
 
+
 	/* Hintergrundbilder auf Unterseiten */
-	body.chapter1 #page_cpl,
-	body.chapter2 #page_cpl {
+	body.chapter1 #page_cpl{
 		background-position: center top;
+		background-size: cover;
+	}
+
+	body.chapter2 #page_cpl{
 		background-size: cover;
 	}
 
@@ -1307,6 +1343,9 @@ a {
 	.gallery-cpl {
 		background-position: center top;
 		background-size: cover;
+		min-height: 135svh;
+		width: auto;
+		
 	}
 
 	.gallery-container {
@@ -1314,21 +1353,31 @@ a {
 		width: 100%;
 		padding: 3em 0.5em 1em 0.5em;
 		gap: 0.2em;
+		transform: translateY(48%);
 	}
 
 	.gallery-image-wrap {
 		width: 100%;
 		min-width: 0;
-		flex: none;
+		height: 55vh;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
 
 	#gallery-image-link {
 		width: 100%;
+		height: 100%;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
 
 	#gallery-image {
 		max-width: 78vw;
-		max-height: 50vh;
+		max-height: 100%;
 		width: auto;
 		height: auto;
 		object-fit: contain;
@@ -1338,19 +1387,34 @@ a {
 		font-size: 1.5em;
 		line-height: 1.2em;
 		margin-top: 1em;
+		transform: translateY(1000%);
 	}
 
 	.gallery-btn {
-		font-size: 1.6em;
+		font-size: 0;
 		margin: 0;
 		padding: 0;
+	}
+
+	.gallery-btn::before {
+		font-size: 2rem;
+		line-height: 1;
+		font-family: Helvetica, sans-serif;
+	}
+	
+	.gallery-btn.prev::before {
+		content: "‹";
+	}
+
+	.gallery-btn.next::before {
+		content: "›";
 	}
 
 	#details {
 		width: 92%;
 		height: auto;
 		margin: 0 auto;
-		padding: 1em 0 4em 0;
+		padding: 16em 0 4em 0;
 		display: flex;
 		flex-wrap: wrap;
 		align-items: flex-start;
@@ -1369,10 +1433,9 @@ a {
 	}
 
 	#return-btn {
-		display: inline-block;
+		display: flex;
 		transform: none;
 		padding: 0.5em 1em;
-		margin-top: 1em;
 	}
 
 	/* Basic / Impressum */
