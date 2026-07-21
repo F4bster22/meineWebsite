@@ -57,7 +57,7 @@ const galleryImages = [
 		link: "../gallery/finger-heart/index.html"
 	},
 	{
-		src: "../Images/Artwork/human_bias.png",
+		src: "../Images/Artwork/Human_Bias.png",
 		alt: "Human Bias",
 		caption: "Human Bias",
 		medium: "Pigmentierte Tinte auf Papier",
@@ -65,7 +65,7 @@ const galleryImages = [
 		link: "../gallery/human-bias/index.html"
 	},
 	{
-		src: "../Images/Artwork/Marilyn_popart.webp",
+		src: "../Images/Artwork/Marilyn_Popart.webp",
 		alt: "Grace under their Gaze",
 		caption: "Grace under their Gaze",
 		medium: "Digital",
@@ -89,7 +89,7 @@ const galleryImages = [
 		link: "../gallery/between-heart-and-mind/index.html"
 	},
 	{
-		src: "../Images/Artwork/venice.png",
+		src: "../Images/Artwork/Venice.png",
 		alt: "Venice",
 		caption: "Venice",
 		medium: "Pigmentierte Tinte auf Papier",
