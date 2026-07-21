@@ -734,7 +734,7 @@ a {
 		font-size: 2em;
 		font-family: "Cedarville Cursive", Helvetica, sans-serif;
 		color: #5e4325;
-		margin: 0 auto;
+		margin: 2em auto;
 		padding: 1.3em 0 1.3em 0;
 		box-shadow: 0.2em 0.3em 0.3em rgba(0, 0, 0, 0.5);
 	}
@@ -1091,6 +1091,374 @@ a {
 		padding-top: 1em;
 	}
 
+
+/* Tablet Querformat -------------------------------------------------- */
+/* Für Tablets im Querformat, z.B. iPad quer / Android Tablet quer */
+@media screen and (min-width: 721px) and (max-width: 1400px) and (orientation: landscape) {
+
+	/* Grundlayout */
+	body {
+		font-size: 11pt;
+		letter-spacing: 0.05em;
+		overflow-x: hidden;
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		letter-spacing: 0.16em;
+	}
+
+	p {
+		line-height: 1.45em;
+	}
+
+	/* Header */
+	#header h1 {
+		left: 1em;
+		font-size: 1.5em;
+		letter-spacing: 0.18em;
+		max-width: 70vw;
+		overflow: hidden;
+		white-space: nowrap;
+	}
+
+	#header nav {
+		font-size: 1.8em;
+	}
+
+	#header nav > ul > li > a {
+		padding: 0 1em;
+		letter-spacing: 0.16em;
+	}
+
+	#header nav > ul > li > a.menuIcon::after {
+		margin: 0 0 0 0.8em;
+	}
+
+	/* Starter allgemein */
+	#starter,
+	#starter2,
+	#starter3,
+	#starter4,
+	#starterBasic {
+		font-size: 2.35em;
+		line-height: 1.1em;
+		transform: none;
+	}
+
+	#starter {
+		height: 100svh;
+	}
+
+	#starter h2 {
+		font-size: 3em;
+		padding: 2em 1em 2em 1em;
+		transform: translateY(1em);
+	}
+
+	#starter .more.scrolly {
+		margin-top: 3em;
+		font-size: 1em;
+	}
+
+	/* Galerie-Starter */
+	#starter2 {
+		height: 100svh;
+		transform: none;
+		background-size: cover;
+		background-position: center center;
+		background-repeat: no-repeat;
+	}
+
+	#starter2 h2 {
+		font-size: 2em;
+		transform: translateY(-1.5em);
+	}
+
+	/* 3D-Starter */
+	#starter3 {
+		height: 100svh;
+		transform: none;
+		background-size: cover;
+		background-position: center center;
+		background-repeat: no-repeat;
+	}
+
+	#starter3 h2 {
+		font-size: 2em;
+		transform: none;
+		background-color: #f3e8e3a6;
+		margin: 0 2em;
+		padding: 0.35em 0.7em;
+		border-radius: 1em;
+	}
+
+	#starter4,
+	#starterBasic {
+		height: 30svh;
+		min-height: 5em;
+	}
+
+	#starter4 h2,
+	#starterBasic h2 {
+		font-size: 2.5em;
+		padding-top: 1.5em;
+	}
+
+	/* Startseiten-Abschnitte */
+	#section1 {
+		padding-left: 2em;
+		padding-right: 2em;
+	}
+
+	#details_d1 {
+		padding-top: 3em;
+	}
+
+	#introText {
+		max-width: 900px;
+		width: 100%;
+		padding: 0 2em;
+	}
+
+	#gallery-link {
+		font-size: 1.7em;
+		max-width: 9em;
+		padding: 1em 0.8em;
+	}
+
+	#section1.design1 {
+		min-height: 100svh;
+	}
+
+	#section1.design2 {
+		height: 7em;
+	}
+
+	/* About- und Artwork-Seiten */
+	#section1.design3,
+	#section1.designArt {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		padding: 4em 3em;
+		gap: 2em;
+	}
+
+	#section1.design3 > .about-image,
+	#section1.design3 > .about-texts,
+	#section1.designArt > .artwork-image,
+	#section1.designArt > .about-texts {
+		flex: 1;
+		min-width: 0;
+		padding: 0;
+	}
+
+	.artwork-image,
+	.about-image {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.artwork-image img,
+	.about-image img {
+		max-width: 42vw;
+		max-height: 76svh;
+		width: auto;
+		height: auto;
+		padding: 0;
+		margin: 0 auto;
+		object-fit: contain;
+	}
+
+	.about-texts {
+		max-width: none;
+		width: 100%;
+		padding: 0 1.5em;
+		font-size: 0.85em;
+		line-height: 1.45em;
+		text-align: left;
+		align-self: center;
+	}
+
+	.about-text {
+		display: none;
+	}
+
+	.about-text.active {
+		display: block;
+	}
+
+	.lang-btn {
+		font-size: 0.9rem;
+		padding: 0.45rem 0.9rem;
+	}
+
+	/* Galerie */
+	.gallery-cpl {
+		background-position: center top;
+		background-size: cover;
+		min-height: 110svh;
+	}
+
+	.gallery-container {
+		display: grid;
+		grid-template-columns: 3em minmax(0, 1fr) 3em;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		margin: auto auto;
+		padding: 180px 2em 1em 2em;
+		gap: 0.5em;
+		transform: none;
+	}
+
+	.gallery-image-wrap {
+		width: 100%;
+		min-width: 0;
+		height: auto;
+
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+	}
+
+	#gallery-image-link {
+		width: 100%;
+		height: 58svh;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	#gallery-image {
+		max-width: 68vw;
+		max-height: 80%;
+		width: auto;
+		height: auto;
+		object-fit: contain;
+	}
+
+	#gallery-caption-main {
+		font-size: 1.6em;
+		line-height: 1.2em;
+		margin-top: 0;
+		letter-spacing: 0.05em;
+	}
+
+	.gallery-btn {
+		font-size: 0;
+		margin: 0;
+		padding: 0;
+
+		width: 2.5rem;
+		height: 2.5rem;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.gallery-btn::before {
+		font-size: 2rem;
+		line-height: 1;
+		font-family: Helvetica, sans-serif;
+	}
+
+	.gallery-btn.prev::before {
+		content: "‹";
+	}
+
+	.gallery-btn.next::before {
+		content: "›";
+	}
+
+	#details {
+		width: 90%;
+		height: auto;
+		margin: -4em auto 0 auto;
+		padding: 0 0 5em 0;
+
+		display: flex;
+		flex-wrap: wrap;
+		align-items: flex-start;
+		justify-content: center;
+		gap: 0.75em;
+
+		font-size: 0.9em;
+		line-height: 1.25em;
+	}
+
+	#details p,
+	#details li,
+	#details div {
+		min-width: 0;
+		hyphens: auto;
+		overflow-wrap: break-word;
+	}
+
+	#return-btn {
+		display: block;
+		transform: none;
+		padding: 0.5em;
+	}
+
+	/* Basic / Kontakt / Impressum */
+	.basic {
+		min-height: 100svh;
+		padding: 6em 3em 5em 3em;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+
+	.basic h2 {
+		font-size: 2.5em;
+	}
+
+	.basic main,
+	.basic .content {
+		max-width: 800px;
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	#imprint {
+		padding: 6em 3em 3em 3em;
+	}
+
+	#imprint .content {
+		max-width: 800px;
+		width: 100%;
+		font-size: 0.95em;
+		line-height: 1.45em;
+	}
+
+	/* Footer */
+	#footer {
+		padding: 2em 2em 1em 2em;
+	}
+
+	.icons {
+		margin: 0 0 0.75em 0;
+		gap: 0.75em;
+	}
+
+	.copyright {
+		font-size: 0.75em;
+		line-height: 1.4em;
+	}
+}
+
+	
 /* Mobile Version ------------------------------*/
 
 @media screen and (max-width: 720px), screen and (orientation: portrait) {
@@ -1490,71 +1858,3 @@ a {
 		padding-top: 1.2em;
 	}
 }
-
-/* @media screen and (max-width: 480px) {
-	body {
-		font-size: 10.5pt;
-	}
-
-	#header h1 {
-		font-size: 0.75em;
-		letter-spacing: 0.08em;
-		max-width: 62vw;
-	}
-
-	#header nav > ul > li > a span {
-		display: none;
-	}
-
-	#menu ul > li > a {
-		letter-spacing: 0.22em;
-	}
-
-	#starter,
-	#starter2,
-	#starter3,
-	#starter4,
-	#starterBasic {
-		font-size: 1.7em;
-	}
-
-	#section1.design3,
-	#section1.designArt {
-		padding: 2.5em 1em;
-	}
-
-	.about-texts {
-		font-size: 0.9em;
-	}
-
-	.artwork-image img,
-	.about-image img {
-		max-width: 88vw;
-		max-height: 48vh;
-	}
-
-	.gallery-container {
-		grid-template-columns: 2em minmax(0, 1fr) 2em;
-		padding-left: 0.25em;
-		padding-right: 0.25em;
-	}
-
-	#gallery-image {
-		max-width: 76vw;
-		max-height: 45vh;
-	}
-
-	#gallery-caption-main {
-		font-size: 1.35em;
-	}
-
-	#details {
-		width: 94%;
-		font-size: 0.85em;
-	}
-
-	#gallery-link {
-		font-size: 1.35em;
-	}
-} */
-
