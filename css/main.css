@@ -1123,7 +1123,7 @@ a {
 	/* Header / Menü */
 	#header h1 {
 		left: 0.9em;
-		font-size: 1.1em;
+		font-size: 1.5em;
 		letter-spacing: 0.12em;
 		max-width: 70vw;
 		overflow: hidden;
@@ -1131,7 +1131,7 @@ a {
 	}
 
 	#header nav {
-		font-size: 1.25em;
+		font-size: 2em;
 	}
 
 	#header nav > ul > li > a {
@@ -1170,11 +1170,11 @@ a {
 	}
 
 	#starter {
-		height: 100svh;
+		height: 100vh;
 	}
 
 	#starter2 {
-		height: 90svh;
+		height: 90vh;
 		transform: none;
 
 		background-size: cover;
@@ -1367,12 +1367,10 @@ a {
 	}
 
 	#gallery-image-link {
-		width: 100%;
-		height: 100%;
-
-		display: flex;
-		align-items: center;
-		justify-content: center;
+	height: 52svh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	}
 
 	#gallery-image {
@@ -1386,8 +1384,7 @@ a {
 	#gallery-caption-main {
 		font-size: 1.5em;
 		line-height: 1.2em;
-		margin-top: 1em;
-		transform: translateY(1000%);
+		margin-top: 15em;
 	}
 
 	.gallery-btn {
@@ -1414,7 +1411,7 @@ a {
 		width: 92%;
 		height: auto;
 		margin: 0 auto;
-		padding: 16em 0 4em 0;
+		padding: 0 0 4em 0;
 		display: flex;
 		flex-wrap: wrap;
 		align-items: flex-start;
@@ -1438,9 +1435,17 @@ a {
 		padding: 0.5em 1em;
 	}
 
+
 	/* Basic / Impressum */
 	.basic {
+		min-height: 100vh;
 		padding: 7em 1.25em 5em 1.25em;
+
+		display: flex;
+		flex-direction: column;   /* Header und Text untereinander */
+		justify-content: center;  /* vertikal mittig */
+		align-items: center;      /* horizontal mittig */
+		text-align: center;
 	}
 
 	.basic h2 {

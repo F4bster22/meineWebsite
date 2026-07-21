@@ -37,7 +37,7 @@ if (closeBtn) {
 
 // Klick außerhalb des Menüs
 // reagiert auf Klick irgendwo im Fenster
-window.addEventListener('click', function(event) {
+window.addEventListener('pointerdown', function(event) {
   if (
     body.classList.contains('menu-visible') &&
     !event.target.closest('#menu') &&
