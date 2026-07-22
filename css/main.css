@@ -477,7 +477,7 @@ a {
 								content: '';
 								display: inline-block;
 								height: 1em;
-								vertical-align: center;
+								vertical-align: middle;
 								right: 4em;
 								width: 1em;
 								margin: 0 1em 0 1em;
@@ -692,7 +692,6 @@ a {
 	
 	#introText {
 		max-width: 135vh;
-		position: center;
 		margin: 0 auto;
 	}
 
@@ -746,7 +745,6 @@ a {
 
 	#section1.design2 {
 		background-image: url("../Images/Stuck.png");
-		display: visible;
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -790,14 +788,22 @@ a {
 		flex: 1;
 	}
 
-
-	.artwork-image img,
-	.about-image img {
-		max-height: 100vh;
+	.artwork-image,
+	.about-image {
 		display: flex;
 		justify-content: center;
 		align-items: center;
+	}
+
+
+	.artwork-image img,
+	.about-image img {
+		max-width: 100%;
+		max-height: 100vh;
+		height: auto;
+		width: auto;
 		margin: 0 auto;
+		object-fit: contain;
 	}
 
 	.about-image img {
@@ -955,7 +961,6 @@ a {
 	}
 
 	#section2.design2 {
-		display: visible;
 		height: 10em;
 		background-color: #ebd8c8;
 		color: #3a0101; /* former: #8f3545 */
@@ -1094,7 +1099,7 @@ a {
 
 /* Tablet Querformat -------------------------------------------------- */
 /* Für Tablets im Querformat, z.B. iPad quer / Android Tablet quer */
-@media screen and (min-width: 721px) and (max-width: 1400px) and (orientation: landscape) {
+@media screen and (min-width: 721px) and (max-width: 1180px) and (orientation: landscape) {
 
 	/* Grundlayout */
 	body {
@@ -1580,7 +1585,6 @@ a {
 
 	#starter3 h2 {
 		font-size: 2em;
-		position: center;
 		background-color: #f3e8e3a6;
 		margin: 1em 1em;
 		border-radius: 1em;
@@ -1711,23 +1715,22 @@ a {
 	.gallery-cpl {
 		background-position: center top;
 		background-size: cover;
-		min-height: 135svh;
-		width: auto;
+		min-height: 100svh;
+		width: 100%;
 		
 	}
 
 	.gallery-container {
+		display: grid;
 		grid-template-columns: 2.5em minmax(0, 1fr) 2.5em;
 		width: 100%;
-		padding: 3em 0.5em 1em 0.5em;
+		padding: 16em 0.5em 5em 0.5em;
 		gap: 0.2em;
-		transform: translateY(48%);
 	}
 
 	.gallery-image-wrap {
 		width: 100%;
 		min-width: 0;
-		height: 55vh;
 
 		display: flex;
 		align-items: center;
@@ -1735,10 +1738,12 @@ a {
 	}
 
 	#gallery-image-link {
-	height: 52svh;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+		width: 100%;
+		height: 44svh;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
 
 	#gallery-image {
@@ -1749,10 +1754,16 @@ a {
 		object-fit: contain;
 	}
 
+	#details_all {
+		margin-top: -2em;
+		text-align: center;
+		transform: none;
+	}
+
 	#gallery-caption-main {
 		font-size: 1.5em;
 		line-height: 1.2em;
-		margin-top: 15em;
+		margin-top: 0;
 	}
 
 	.gallery-btn {
@@ -1778,7 +1789,7 @@ a {
 	#details {
 		width: 92%;
 		height: auto;
-		margin: 0 auto;
+		margin: -3em auto 0 auto;
 		padding: 0 0 4em 0;
 		display: flex;
 		flex-wrap: wrap;
