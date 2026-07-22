@@ -1131,7 +1131,7 @@ a {
 
 /* Tablet Querformat -------------------------------------------------- */
 /* Für Tablets im Querformat, z.B. iPad quer / Android Tablet quer */
-@media screen and (min-width: 721px) and (max-width: 1180px) and (orientation: landscape) {
+@media screen and (min-width: 721px) and (max-width: 1390px) and (orientation: landscape) {
 
 	/* Grundlayout */
 	body {
@@ -1342,7 +1342,7 @@ a {
 
 	.gallery-container {
 		display: grid;
-		grid-template-columns: 3em minmax(0, 1fr) 3em;
+		grid-template-columns: 14em minmax(0, 1fr) 14em;
 		align-items: center;
 		justify-content: center;
 		width: 100%;
@@ -1401,8 +1401,16 @@ a {
 		justify-content: center;
 	}
 
+	.gallery-btn.prev {
+		justify-self: end;
+	}
+
+	.gallery-btn.next {
+		justify-self: start;
+	}
+
 	.gallery-btn::before {
-		font-size: 2rem;
+		font-size: 5rem;
 		line-height: 1;
 		font-family: Helvetica, sans-serif;
 	}
@@ -1756,7 +1764,7 @@ a {
 		display: grid;
 		grid-template-columns: 2.5em minmax(0, 1fr) 2.5em;
 		width: 100%;
-		padding: 16em 0.5em 5em 0.5em;
+		padding: 12em 0.5em 5em 0.5em;
 		gap: 0.2em;
 	}
 
