@@ -62,6 +62,22 @@ a {
 	font-display: swap;
 }
 
+@font-face {
+	font-family: "Lora";
+	src: url("../fonts/Lora-Regular.woff2") format("woff2");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Lora";
+	src: url("../fonts/Lora-Bold.woff2") format("woff2");
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
 
 /* Basic -------------------------------------------------------------------------------------------- */
 
@@ -1046,6 +1062,22 @@ a {
 		display: none;
 	}
 
+	#footer ul > li > a.instagram::after {
+		mask-image: url("Images/instagram_icon.svg");
+		mask-position: center;
+		mask-repeat: no-repeat;
+		mask-size: contain;
+		content: '';
+		display: inline-block;
+		width: 1.3em;
+		height: 1.3em;
+		background-color: #ffefdb;
+	}
+
+	#footer ul > li > a.instagram:hover::after {
+		background-color: #3a0101;
+	}
+
 	#footer ul > li > a.envelope::after {
 			mask-image: url("Images/umschlag_icon.svg");
 			mask-position: center;
@@ -1057,7 +1089,7 @@ a {
 			width: 1.5em;
 			margin: 0 1em 0 1em;
 			mask-size: contain;
-			transform: translateY(-0.42em);
+			transform: translateY(-0.28em);
 			background-color: #ffefdb;
 	}
 

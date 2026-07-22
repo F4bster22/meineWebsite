@@ -81,7 +81,7 @@ if (imageElement && captionElement && mediumElement && formatElement && linkElem
       link: '../gallery/good-mood-good-luck/index.html'
     },
     {
-      src: '../Images/Artwork/OpeOpeVega.png',
+      src: '../Images/Artwork/Between_Heart_And_Mind.png',
       alt: 'Between Heart and Mind',
       caption: 'Between Heart and Mind',
       medium: 'Farbstifte auf Papier',
