@@ -907,6 +907,8 @@ a {
 		object-fit: contain;
 		border-radius: 2px;
 		box-shadow: 0 1em 3em rgba(0, 0, 0, 0.5);
+		-webkit-user-drag: none;
+		user-select: none;
 	}
 
 	#gallery-caption-main {
@@ -940,6 +942,8 @@ a {
 		align-items: center;
 		width: 100%;
 		text-decoration: none;
+		touch-action: pan-y;
+		user-select: none;
 	}
 
 	#details_all {

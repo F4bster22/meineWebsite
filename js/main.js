@@ -119,7 +119,7 @@ if (imageElement && captionElement && mediumElement && formatElement && linkElem
     linkElement.href = image.link;
   }
 
-  prevButton.addEventListener('click', function () {
+  function showPrevImage() {
     currentImage--;
 
     if (currentImage < 0) {
@@ -127,9 +127,9 @@ if (imageElement && captionElement && mediumElement && formatElement && linkElem
     }
 
     showImage(currentImage);
-  });
+  }
 
-  nextButton.addEventListener('click', function () {
+  function showNextImage() {
     currentImage++;
 
     if (currentImage >= galleryImages.length) {
@@ -137,6 +137,56 @@ if (imageElement && captionElement && mediumElement && formatElement && linkElem
     }
 
     showImage(currentImage);
+  }
+
+  prevButton.addEventListener('click', showPrevImage);
+  nextButton.addEventListener('click', showNextImage);
+
+  let swipeStartX = 0;
+  let swipeStartY = 0;
+  let swipeEndX = 0;
+  let swipeEndY = 0;
+  let hasSwiped = false;
+
+  linkElement.addEventListener('touchstart', function (event) {
+    swipeStartX = event.touches[0].clientX;
+    swipeStartY = event.touches[0].clientY;
+    hasSwiped = false;
+  }, { passive: true });
+
+  linkElement.addEventListener('touchmove', function (event) {
+    swipeEndX = event.touches[0].clientX;
+    swipeEndY = event.touches[0].clientY;
+  }, { passive: true });
+
+  linkElement.addEventListener('touchend', function () {
+    const distanceX = swipeEndX - swipeStartX;
+    const distanceY = swipeEndY - swipeStartY;
+
+    const minSwipeDistance = 50;
+    const isHorizontalSwipe = Math.abs(distanceX) > Math.abs(distanceY);
+
+    if (isHorizontalSwipe && Math.abs(distanceX) > minSwipeDistance) {
+      hasSwiped = true;
+
+      if (distanceX < 0) {
+        showNextImage();
+      } else {
+        showPrevImage();
+      }
+    }
+
+    swipeStartX = 0;
+    swipeStartY = 0;
+    swipeEndX = 0;
+    swipeEndY = 0;
+  });
+
+  linkElement.addEventListener('click', function (event) {
+    if (hasSwiped) {
+      event.preventDefault();
+      hasSwiped = false;
+    }
   });
 
   showImage(currentImage);
