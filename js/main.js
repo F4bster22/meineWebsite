@@ -65,7 +65,7 @@ if (imageElement && captionElement && mediumElement && formatElement && linkElem
       link: '../gallery/human-bias/index.html'
     },
     {
-      src: '../Images/Artwork/Marilyn_Popart.webp',
+      src: '../Images/Artwork/Grace_Gaze.webp',
       alt: 'Grace under their Gaze',
       caption: 'Grace under their Gaze',
       medium: 'Digital',

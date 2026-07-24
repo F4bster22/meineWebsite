@@ -530,8 +530,8 @@ a {
 
 	#starter h2 {
 		color: #292f54;
-		font-size: 1.5em;
-		padding: 2em 0 0 0;
+		font-size: 2em;
+		padding: 0.5em 0 0 0;
 		/* Verschieb Text nach unten*/
 		transform: translateY(2em);
 		}
@@ -739,7 +739,8 @@ a {
 		}
 
 	#gallery-link {
-		border-color: #88653e;
+		background-color:#21060b;
+		border-color: #31060e;
 		border-style: solid;
 		border-radius: 2em;
 		max-width: 10em;
@@ -748,15 +749,17 @@ a {
 		justify-content: center;
 		font-size: 2em;
 		font-family: "Cedarville Cursive", Helvetica, sans-serif;
-		color: #5e4325;
+		color: #f7f3ec;
 		margin: 2em auto;
 		padding: 1.3em 0 1.3em 0;
-		box-shadow: 0.2em 0.3em 0.3em rgba(0, 0, 0, 0.5);
+		box-shadow: 0.2em 0.3em 0.3em rgba(48, 33, 33, 0.8);
 	}
 
 	#gallery-link:hover {
-		background-color: #dbb787;
-		color: #3b2b17;
+		background: none;
+		background-color: #f5efeb;
+		color: #21060b;
+		transform: translateY(-0.08em);
 	}
 
 	#section1.design2 {
@@ -1788,8 +1791,8 @@ body.curtain-open #curtain-overlay::before {
 	}
 
 	#starter h2 {
-		font-size: 1.5em;
-		padding: 3em 1em;
+		font-size: 2em;
+		padding: 2.5em 1em;
 		transform: none;
 	}
 
