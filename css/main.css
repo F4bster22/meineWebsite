@@ -1095,7 +1095,7 @@ a {
 			height: 1.8em;
 			right: 4em;
 			width: 1.5em;
-			margin: 0 1em 0 1em;
+			margin: 0 0.6em 0 1.5em;
 			mask-size: contain;
 			transform: translateY(-0.28em);
 			background-color: #ffefdb;
@@ -1135,6 +1135,173 @@ a {
 		text-decoration: underline;
 		padding-top: 1em;
 	}
+
+
+/* Special -------------------------------------------------------------- */
+	#confetti-canvas {
+		position: fixed;
+		inset: 0;
+		width: 100%;
+		height: 100%;
+		pointer-events: none;
+		z-index: 10002;
+	}
+
+	#curtain-overlay {
+		position: fixed;
+		inset: 0;
+		z-index: 10001;
+		pointer-events: none;
+		overflow: hidden;
+	}
+
+	/* Vorhang liegt vor der Website, aber hinter dem Konfetti */
+#curtain-overlay {
+	position: fixed;
+	inset: 0;
+	z-index: 10001;
+	pointer-events: none;
+	overflow: hidden;
+}
+
+/* obere Vorhangkante / Schiene */
+#curtain-overlay::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 3.5em;
+	z-index: 3;
+
+	background:
+		linear-gradient(
+			to bottom,
+			#14070a 0%,
+			#3a0101 45%,
+			#18070a 100%
+		);
+
+	box-shadow:
+		0 0.4em 1em rgba(0, 0, 0, 0.45),
+		inset 0 -0.4em 0.8em rgba(0, 0, 0, 0.35);
+
+	transform: translateY(0);
+	transition: transform 0.5s ease-in-out 1s;
+}
+
+/* die beiden Vorhanghälften */
+.curtain {
+	position: absolute;
+	top: 0;
+	width: 52%;
+	height: 100%;
+
+	background:
+		/* helle und dunkle Stofffalten */
+		repeating-linear-gradient(
+			90deg,
+			rgba(255, 255, 255, 0.08) 0px,
+			rgba(255, 255, 255, 0.02) 10px,
+			rgba(0, 0, 0, 0.22) 24px,
+			rgba(255, 255, 255, 0.04) 38px,
+			rgba(0, 0, 0, 0.28) 56px
+		),
+
+		/* leichter Glanz in der Mitte */
+		linear-gradient(
+			90deg,
+			#21060b 0%,
+			#41050a 35%,
+			#3a0101 70%,
+			#160609 100%
+		);
+
+	box-shadow:
+		inset 0 0 3em rgba(0, 0, 0, 0.5),
+		0 0 2em rgba(0, 0, 0, 0.45);
+
+	transition: transform 2.4s cubic-bezier(0.77, 0, 0.18, 1);
+}
+
+/* zusätzliche tiefe Falten */
+.curtain::before {
+	content: '';
+	position: absolute;
+	inset: 0;
+
+	background:
+		repeating-linear-gradient(
+			90deg,
+			rgba(0, 0, 0, 0.35) 0px,
+			rgba(0, 0, 0, 0.05) 18px,
+			rgba(255, 255, 255, 0.10) 32px,
+			rgba(0, 0, 0, 0.25) 52px
+		);
+
+	opacity: 0.65;
+}
+
+/* leichte Stoffkante unten */
+.curtain::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 2.5em;
+
+	background:
+		linear-gradient(
+			to bottom,
+			rgba(0, 0, 0, 0),
+			rgba(0, 0, 0, 0.35)
+		);
+}
+
+.curtain-left {
+	left: 0;
+	transform: translateX(0);
+	border-right: 0.25em solid rgba(20, 0, 0, 0.55);
+}
+
+.curtain-right {
+	right: 0;
+	transform: translateX(0);
+	border-left: 0.25em solid rgba(20, 0, 0, 0.55);
+}
+
+/* Vorhang öffnet sich */
+body.curtain-open .curtain-left {
+	transform: translateX(-120%);
+}
+
+body.curtain-open .curtain-right {
+	transform: translateX(120%);
+}
+
+/* Overlay nach der Animation ausblenden */
+body.curtain-open #curtain-overlay {
+	animation: hideCurtain 2.5s forwards;
+}
+
+body.curtain-open #curtain-overlay::before {
+	transform: translateY(-120%);
+}
+
+@keyframes hideCurtain {
+	0% {
+		visibility: visible;
+	}
+
+	99% {
+		visibility: visible;
+	}
+
+	100% {
+		visibility: hidden;
+	}
+}
 
 
 /* Tablet Querformat -------------------------------------------------- */
