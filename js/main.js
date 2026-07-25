@@ -142,16 +142,21 @@ if (imageElement && captionElement && mediumElement && formatElement && linkElem
   prevButton.addEventListener('click', showPrevImage);
   nextButton.addEventListener('click', showNextImage);
 
+/* Swip-Code ---------- */
   let swipeStartX = 0;
   let swipeStartY = 0;
   let swipeEndX = 0;
   let swipeEndY = 0;
-  let hasSwiped = false;
+  let hasRealSwipe = false;
 
   linkElement.addEventListener('touchstart', function (event) {
     swipeStartX = event.touches[0].clientX;
     swipeStartY = event.touches[0].clientY;
-    hasSwiped = false;
+
+    swipeEndX = swipeStartX;
+    swipeEndY = swipeStartY;
+
+    hasRealSwipe = false;
   }, { passive: true });
 
   linkElement.addEventListener('touchmove', function (event) {
@@ -159,15 +164,23 @@ if (imageElement && captionElement && mediumElement && formatElement && linkElem
     swipeEndY = event.touches[0].clientY;
   }, { passive: true });
 
-  linkElement.addEventListener('touchend', function () {
+  linkElement.addEventListener('touchend', function (event) {
+    if (event.changedTouches.length > 0) {
+      swipeEndX = event.changedTouches[0].clientX;
+      swipeEndY = event.changedTouches[0].clientY;
+    }
+
     const distanceX = swipeEndX - swipeStartX;
     const distanceY = swipeEndY - swipeStartY;
 
-    const minSwipeDistance = 50;
-    const isHorizontalSwipe = Math.abs(distanceX) > Math.abs(distanceY);
+    const minSwipeDistance = 80;
 
-    if (isHorizontalSwipe && Math.abs(distanceX) > minSwipeDistance) {
-      hasSwiped = true;
+    const isLongEnough = Math.abs(distanceX) > minSwipeDistance;
+    const isClearlyHorizontal = Math.abs(distanceX) > Math.abs(distanceY) * 1.8;
+
+    if (isLongEnough && isClearlyHorizontal) {
+      hasRealSwipe = true;
+      event.preventDefault();
 
       if (distanceX < 0) {
         showNextImage();
@@ -180,12 +193,12 @@ if (imageElement && captionElement && mediumElement && formatElement && linkElem
     swipeStartY = 0;
     swipeEndX = 0;
     swipeEndY = 0;
-  });
+  }, { passive: false });
 
   linkElement.addEventListener('click', function (event) {
-    if (hasSwiped) {
+    if (hasRealSwipe) {
       event.preventDefault();
-      hasSwiped = false;
+      hasRealSwipe = false;
     }
   });
 

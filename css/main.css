@@ -526,26 +526,33 @@ a {
 		font-family: "Cedarville Cursive", cursive, sans-serif;
 		font-size: 3em;
 		line-height: 1.0em;
+		position: relative;
+		height: 100svh;
 	}
 
 	#starter h2 {
 		color: #292f54;
 		font-size: 2em;
-		padding: 0.5em 0 0 0;
+		padding: 0.5em 0 5em 0;
 		/* Verschieb Text nach unten*/
 		transform: translateY(2em);
 		}
 
 	#starter .more.scrolly {
+		position: absolute;
+		left: 50%;
+		bottom: 1em;
+		transform: translateX(-50%);
+
 		display: inline-flex;
 		flex-direction: column;
 		align-items: center;
 
+		width: fit-content;
+		margin: 0;
+
 		border: 0;
 		cursor: pointer;
-		width: fit-content;
-		margin: 5em auto 0 auto;
-
 		color: #000;
 		text-align: center;
 		gap: 0;
@@ -874,6 +881,9 @@ a {
 /* Gallery Section ------------------------------------------ */
 	
 	.gallery-cpl {
+		position: relative;
+		min-height: 100svh;
+
 		background-image: url("../Images/canvas_museum.png");
 		background-repeat: no-repeat;
 		background-position: center -220px;
@@ -882,31 +892,55 @@ a {
 
 	.gallery-container {
 		display: grid;
-		grid-template-columns: auto auto auto;
-		justify-content: center;
-		column-gap: 0.5em;
+		grid-template-columns: 4em minmax(0, 1fr) 4em;
 		align-items: center;
-		justify-content: center;
-		gap: 0.1em;
-		margin: 0 auto 0 auto;
+		justify-items: center;
+
+		width: min(78vw, 950px);
+
+		margin: 0 auto;
 		padding-top: 100px;
 		padding-bottom: 0.5em;
+
+		gap: 0.5em;
+		transform: none;
 	}
 
 	.gallery-image-wrap {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		justify-content: center;
 		text-align: center;
-		flex: 1;
-		min-width: 69vh;
-	} 
+
+		width: 100%;
+		min-width: 0;
+	}
+
+	#gallery-image-link {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		width: 100%;
+		height: 55vh;
+
+		text-decoration: none;
+		touch-action: pan-y;
+		user-select: none;
+	}
 
 	#gallery-image {
-		max-height: 55vh;
+		max-width: 100%;
+		max-height: 100%;
+
+		width: auto;
+		height: auto;
+
 		object-fit: contain;
 		border-radius: 2px;
 		box-shadow: 0 1em 3em rgba(0, 0, 0, 0.5);
+
 		-webkit-user-drag: none;
 		user-select: none;
 	}
@@ -927,23 +961,22 @@ a {
 		cursor: pointer;
 		line-height: 1;
 		transition: color 0.3s ease, transform 0.3s ease;
-		padding-bottom: 0.5em;
-		margin: 0 1em 0 1em;
+
+		padding: 0;
+		margin: 0;
+	}
+
+	.gallery-btn.prev {
+		justify-self: end;
+	}
+
+	.gallery-btn.next {
+		justify-self: start;
 	}
 
 	.gallery-btn:hover {
 		color: #8b0000;
 		transform: scale(1.08);
-	}
-
-	#gallery-image-link {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		width: 100%;
-		text-decoration: none;
-		touch-action: pan-y;
-		user-select: none;
 	}
 
 	#details_all {
@@ -1370,7 +1403,7 @@ body.curtain-open #curtain-overlay::before {
 
 	#starter h2 {
 		font-size: 3em;
-		padding: 2em 1em 2em 1em;
+		padding: 2em 1em 3em 1em;
 		transform: translateY(1em);
 	}
 
@@ -1443,6 +1476,7 @@ body.curtain-open #curtain-overlay::before {
 		font-size: 1.7em;
 		max-width: 9em;
 		padding: 1em 0.8em;
+		background-color: #330c13;
 	}
 
 	#section1.design1 {
@@ -1520,16 +1554,21 @@ body.curtain-open #curtain-overlay::before {
 		background-position: center top;
 		background-size: cover;
 		min-height: 110svh;
+		width: 100%;
 	}
 
 	.gallery-container {
 		display: grid;
-		grid-template-columns: 20em minmax(0, 1fr) 20em;
+		grid-template-columns: 7em minmax(0, 1fr) 7em;
 		align-items: center;
-		justify-content: center;
-		width: 100%;
-		margin: auto auto;
-		padding: 200px 2em 1em 2em;
+		justify-items: center;
+
+		width: min(86vw, 1050px);
+		margin: 0 auto;
+
+		/* Damit schiebst du Bild + Buttons in den Rahmen */
+		padding: 23.5svh 2em 0 2em;
+
 		gap: 0.5em;
 		transform: none;
 	}
@@ -1548,7 +1587,7 @@ body.curtain-open #curtain-overlay::before {
 
 	#gallery-image-link {
 		width: 100%;
-		height: 58svh;
+		height: 56svh;
 
 		display: flex;
 		align-items: center;
@@ -1556,11 +1595,17 @@ body.curtain-open #curtain-overlay::before {
 	}
 
 	#gallery-image {
-		max-width: 68vw;
-		max-height: 80%;
+		max-width: 100%;
+		max-height: 82%;
 		width: auto;
 		height: auto;
 		object-fit: contain;
+	}
+
+	#details_all {
+		margin-top: 1em;
+		text-align: center;
+		transform: none;
 	}
 
 	#gallery-caption-main {
@@ -1592,7 +1637,7 @@ body.curtain-open #curtain-overlay::before {
 	}
 
 	.gallery-btn::before {
-		font-size: 10rem;
+		font-size: 6rem;
 		line-height: 1;
 		font-family: Helvetica, sans-serif;
 	}
@@ -1608,7 +1653,7 @@ body.curtain-open #curtain-overlay::before {
 	#details {
 		width: 90%;
 		height: auto;
-		margin: -4em auto 0 auto;
+		margin: -5em auto;
 		padding: 0 0 5em 0;
 
 		display: flex;
@@ -1852,6 +1897,7 @@ body.curtain-open #curtain-overlay::before {
 		font-size: 1.5em;
 		max-width: 9em;
 		padding: 0.8em 1em;
+		background-color: #330c13;
 	}
 
 	#section1.design2 {
@@ -1940,15 +1986,22 @@ body.curtain-open #curtain-overlay::before {
 		background-size: cover;
 		min-height: 100svh;
 		width: 100%;
-		
 	}
 
 	.gallery-container {
 		display: grid;
 		grid-template-columns: 2.5em minmax(0, 1fr) 2.5em;
-		width: 100%;
-		padding: 12em 0.5em 5em 0.5em;
+		align-items: center;
+		justify-items: center;
+
+		width: min(96vw, 520px);
+		margin: 0 auto;
+
+		/* Damit schiebst du Bild + Buttons in den Rahmen */
+		padding: 25svh 0.5em 0 0.5em;
+
 		gap: 0.2em;
+		transform: none;
 	}
 
 	.gallery-image-wrap {
@@ -1956,8 +2009,10 @@ body.curtain-open #curtain-overlay::before {
 		min-width: 0;
 
 		display: flex;
+		flex-direction: column;
 		align-items: center;
 		justify-content: center;
+		text-align: center;
 	}
 
 	#gallery-image-link {
@@ -1978,7 +2033,7 @@ body.curtain-open #curtain-overlay::before {
 	}
 
 	#details_all {
-		margin-top: -3em;
+		margin-top: 2.5em;
 		text-align: center;
 		transform: none;
 	}
@@ -1993,14 +2048,29 @@ body.curtain-open #curtain-overlay::before {
 		font-size: 0;
 		margin: 0;
 		padding: 0;
+
+		width: 2.2rem;
+		height: 2.2rem;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.gallery-btn.prev {
+		justify-self: end;
+	}
+
+	.gallery-btn.next {
+		justify-self: start;
 	}
 
 	.gallery-btn::before {
-		font-size: 2rem;
+		font-size: 2.4rem;
 		line-height: 1;
 		font-family: Helvetica, sans-serif;
 	}
-	
+
 	.gallery-btn.prev::before {
 		content: "‹";
 	}
@@ -2012,13 +2082,15 @@ body.curtain-open #curtain-overlay::before {
 	#details {
 		width: 92%;
 		height: auto;
-		margin: -3em auto 0 auto;
+		margin: -3em auto;
 		padding: 0 0 4em 0;
+
 		display: flex;
 		flex-wrap: wrap;
 		align-items: flex-start;
 		justify-content: center;
 		gap: 0.75em;
+
 		line-height: 1.25em;
 		font-size: 0.9em;
 	}
