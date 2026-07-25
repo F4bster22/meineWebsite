@@ -1653,7 +1653,7 @@ body.curtain-open #curtain-overlay::before {
 	#details {
 		width: 90%;
 		height: auto;
-		margin: -5em auto;
+		margin: -5em auto 0 auto;
 		padding: 0 0 5em 0;
 
 		display: flex;
@@ -2033,7 +2033,7 @@ body.curtain-open #curtain-overlay::before {
 	}
 
 	#details_all {
-		margin-top: 2.5em;
+		margin-top: 2em;
 		text-align: center;
 		transform: none;
 	}
@@ -2082,7 +2082,7 @@ body.curtain-open #curtain-overlay::before {
 	#details {
 		width: 92%;
 		height: auto;
-		margin: -3em auto;
+		margin: -3em auto 0 auto;
 		padding: 0 0 4em 0;
 
 		display: flex;
