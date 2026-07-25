@@ -1403,7 +1403,7 @@ body.curtain-open #curtain-overlay::before {
 
 	#starter h2 {
 		font-size: 3em;
-		padding: 2em 1em 3em 1em;
+		padding: 1em 1em 3em 1em;
 		transform: translateY(1em);
 	}
 
@@ -1841,7 +1841,7 @@ body.curtain-open #curtain-overlay::before {
 
 	#starter h2 {
 		font-size: 2em;
-		padding: 2em 1em;
+		padding: 0 1em 0 1em;
 		transform: none;
 	}
 
@@ -1860,6 +1860,7 @@ body.curtain-open #curtain-overlay::before {
 	}
 
 	#starter .more.scrolly {
+		bottom: 3em;
 		margin-top: 0;
 		padding-top: 0;
 		font-size: 1.2em;
