@@ -1598,7 +1598,7 @@ body.curtain-open #curtain-overlay::before {
 
 	.gallery-container::before {
 		left: 67%;
-		top: 18svh;
+		top: 19.5svh;
 		width: 9em;
 		opacity: 0.3;
 	}
@@ -1871,7 +1871,7 @@ body.curtain-open #curtain-overlay::before {
 
 	#starter h2 {
 		font-size: 2em;
-		padding: 0 1em 0 1em;
+		padding: -1em 1em 0 1em;
 		transform: none;
 	}
 
@@ -1890,7 +1890,7 @@ body.curtain-open #curtain-overlay::before {
 	}
 
 	#starter .more.scrolly {
-		bottom: 3em;
+		bottom: 5em;
 		margin-top: 0;
 		padding-top: 0;
 		font-size: 1.2em;
