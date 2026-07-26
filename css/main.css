@@ -2036,8 +2036,8 @@ body.curtain-open #curtain-overlay::before {
 	}
 
 	.gallery-container::before {
-		left: 62%;
-		top: 8em;
+		left: 61%;
+		top: 7em;
 		width: 10em;
 		opacity: 0.25;
 	}
