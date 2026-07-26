@@ -891,19 +891,42 @@ a {
 	}
 
 	.gallery-container {
+		position: relative;
 		display: grid;
 		grid-template-columns: 4em minmax(0, 1fr) 4em;
 		align-items: center;
 		justify-items: center;
 
 		width: min(78vw, 950px);
-
 		margin: 0 auto;
 		padding-top: 100px;
 		padding-bottom: 0.5em;
 
 		gap: 0.5em;
 		transform: none;
+	}
+
+	.gallery-container::before {
+		content: "";
+		position: absolute;
+
+		left: 65%;
+		top: 1.2em;
+
+		transform: translateX(-50%);
+
+		width: 9em;
+		aspect-ratio: 16 / 6;
+
+		background-image: url("../Images/click_arrow.PNG");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+
+		opacity: 0.3;
+
+		z-index: 5;
+		pointer-events: none;
 	}
 
 	.gallery-image-wrap {
@@ -1573,6 +1596,13 @@ body.curtain-open #curtain-overlay::before {
 		transform: none;
 	}
 
+	.gallery-container::before {
+		left: 67%;
+		top: 18svh;
+		width: 9em;
+		opacity: 0.3;
+	}
+
 	.gallery-image-wrap {
 		width: 100%;
 		min-width: 0;
@@ -2003,6 +2033,13 @@ body.curtain-open #curtain-overlay::before {
 
 		gap: 0.2em;
 		transform: none;
+	}
+
+	.gallery-container::before {
+		left: 63%;
+		top: 9em;
+		width: 10em;
+		opacity: 0.25;
 	}
 
 	.gallery-image-wrap {
