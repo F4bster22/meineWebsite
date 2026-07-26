@@ -1872,6 +1872,7 @@ body.curtain-open #curtain-overlay::before {
 	#starter h2 {
 		font-size: 2em;
 		padding: -1em 1em 0 1em;
+		margin: 0 1em 0 1em;
 		transform: none;
 	}
 
