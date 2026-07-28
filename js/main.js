@@ -41,6 +41,14 @@ const nextButton = document.querySelector('.gallery-btn.next');
 if (imageElement && captionElement && mediumElement && formatElement && linkElement && prevButton && nextButton) {
   const galleryImages = [
     {
+      src: '../Images/Artwork/Take_Your_Time.webp',
+      alt: 'Take your Time',
+      caption: 'Take your Time',
+      medium: 'Aquarell auf Papier',
+      format: 'DIN A4 Querformat',
+      link: '../gallery/take-your-time/index.html'
+    },
+    {
       src: '../Images/Artwork/Clownfish.png',
       alt: 'Clownfish',
       caption: 'Clownfish',
