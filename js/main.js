@@ -41,6 +41,22 @@ const nextButton = document.querySelector('.gallery-btn.next');
 if (imageElement && captionElement && mediumElement && formatElement && linkElement && prevButton && nextButton) {
   const galleryImages = [
     {
+      src: '../Images/Artwork/Recharged_By_Music.webp',
+      alt: 'Recharged by Music',
+      caption: 'Recharged by Music',
+      medium: 'Farbstifte auf Papier',
+      format: 'DIN A4 Hochformat',
+      link: '../gallery/recharged-by-music/index.html'
+    },
+    {
+      src: '../Images/Artwork/The_Splash.webp',
+      alt: 'The Splash',
+      caption: 'The Splash',
+      medium: 'Acryl mit Strukturpaste auf Leinwand',
+      format: '40 x 30 cm Hochformat',
+      link: '../gallery/the-splash/index.html'
+    },
+    {
       src: '../Images/Artwork/Take_Your_Time.webp',
       alt: 'Take your Time',
       caption: 'Take your Time',
