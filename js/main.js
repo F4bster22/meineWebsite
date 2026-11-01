@@ -41,6 +41,62 @@ const nextButton = document.querySelector('.gallery-btn.next');
 if (imageElement && captionElement && mediumElement && formatElement && linkElement && prevButton && nextButton) {
   const galleryImages = [
     {
+      src: '../Images/Artwork/Fracture.webp',
+      alt: 'Fracture',
+      caption: 'Fracture',
+      medium: 'Pigmentierte Tinte auf Papier',
+      format: 'DIN A5 Hochformat',
+      link: '../gallery/fracture/index.html'
+    },
+    {
+      src: '../Images/Artwork/Bake.webp',
+      alt: 'Bake',
+      caption: 'Bake',
+      medium: 'Pigmentierte Tinte auf Papier',
+      format: 'DIN A5 Querformat',
+      link: '../gallery/bake/index.html'
+    },
+    {
+      src: '../Images/Artwork/Dapper.webp',
+      alt: 'Dapper',
+      caption: 'Dapper',
+      medium: 'Pigmentierte Tinte auf Papier',
+      format: 'DIN A5 Hochformat',
+      link: '../gallery/dapper/index.html'
+    },
+    {
+      src: '../Images/Artwork/Oachkatzl_Schoasch.webp',
+      alt: 'Oachkatzl Schoasch',
+      caption: 'Oachkatzl Schoasch',
+      medium: 'Alkoholmarker auf Papier',
+      format: 'DIN A4 Hochformat',
+      link: '../gallery/oachkatzl-schoasch/index.html'
+    },
+    {
+      src: '../Images/Artwork/Gangly.webp',
+      alt: 'Gangly',
+      caption: 'Gangly',
+      medium: 'Pigmentierte Tinte auf Papier',
+      format: 'DIN A5 Hochformat',
+      link: '../gallery/gangly/index.html'
+    },
+    {
+      src: '../Images/Artwork/Santana.webp',
+      alt: 'Santana',
+      caption: 'Santana',
+      medium: 'Aquarell auf Papier',
+      format: 'DIN A6 Hochformat',
+      link: '../gallery/santana/index.html'
+    },
+    {
+      src: '../Images/Artwork/Bambi.webp',
+      alt: 'Bambi',
+      caption: 'Bambi',
+      medium: 'Acryl auf Hartfaserplatte - gerahmt',
+      format: '7,5 x 7,5 cm',
+      link: '../gallery/bambi/index.html'
+    },
+    {
       src: '../Images/Artwork/Recharged_By_Music.webp',
       alt: 'Recharged by Music',
       caption: 'Recharged by Music',
